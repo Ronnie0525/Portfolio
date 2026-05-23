@@ -15,6 +15,17 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <meta name="theme-color" content="#7B2FBE" />
 
+    <!-- GitHub Pages SPA redirect: restores the path from the 404.html redirect query string -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ronnie Balonon Jr. | Graphic Designer & AI Creative — Dubai" />

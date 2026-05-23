@@ -37,7 +37,7 @@ const App = () => (
   <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <AuthProvider>
           <TooltipProvider>
