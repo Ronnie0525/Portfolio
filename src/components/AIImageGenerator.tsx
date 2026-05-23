@@ -17,7 +17,7 @@ interface GeneratedImage {
   id?: string;
 }
 
-const ACCESS_PASSWORD = "alvin";
+const ACCESS_PASSWORD = "ronnie";
 
 const styleOptions: { id: StyleOption; label: string; icon: string; description: string }[] = [
   { id: "hyper-realistic", label: "Hyper Realistic", icon: "🎨", description: "Ultra-detailed photorealistic portraits" },

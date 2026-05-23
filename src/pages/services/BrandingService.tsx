@@ -204,7 +204,7 @@ const BrandingService = () => {
 
               <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/get-quote">
+                  <Link to="/hire-me">
                     Get Your Brand Quote
                     <ArrowRight className="w-5 h-5" />
                   </Link>
@@ -621,7 +621,7 @@ const BrandingService = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/get-quote">
+                <Link to="/hire-me">
                   Get a Custom Quote
                   <ArrowRight className="w-5 h-5" />
                 </Link>

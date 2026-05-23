@@ -69,7 +69,7 @@ const Video3DShowcase = () => {
                 <div className="relative rounded-xl overflow-hidden aspect-video border border-primary/10 hover:border-primary/40 transition-all duration-300">
                   <img
                     src={video.thumbnail}
-                    alt={`${video.title} - 3D Animation by Alvin Jampazar Dubai`}
+                    alt={`${video.title} - 3D Animation by Ronnie Balonon Jr. Dubai`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />

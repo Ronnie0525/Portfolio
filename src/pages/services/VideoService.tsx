@@ -130,7 +130,7 @@ const VideoService = () => {
     <Layout>
       <SEOHead
         title="Video Production Dubai | Corporate & Brand Videos"
-        description="Professional video production services in Dubai — corporate videos, brand films, event coverage, wedding videography, and fashion films. Cinematic storytelling from concept to final cut by Ronnie Balonon Jr.."
+        description="Professional video production services in Dubai — corporate videos, brand films, event coverage, wedding videography, and fashion films. Cinematic storytelling from concept to final cut by Ronnie Balonon Jr."
         keywords="video production Dubai, corporate video Dubai, brand video Dubai, videography Dubai, wedding videography UAE, event video production, cinematic video Dubai, freelance designer Dubai"
         canonicalUrl="/services/video"
         schemaType="service"

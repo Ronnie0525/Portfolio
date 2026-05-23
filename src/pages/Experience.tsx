@@ -292,7 +292,7 @@ const Experience = () => {
             {[
               { icon: Rocket, title: "Speed & Precision", desc: "Fast turnaround without sacrificing quality — AI-assisted production keeps timelines tight and output sharp." },
               { icon: Eye, title: "Hands-On & Direct", desc: "No middlemen, no handoffs. You talk directly to me, the person designing your work — clearer briefs, faster iterations." },
-              { icon: Zap, title: "AI-First Approach", desc: "AI am layered into every part of my workflow — ideation, generation, refinement — so the work ships faster and looks current." }
+              { icon: Zap, title: "AI-First Approach", desc: "AI is layered into every part of my workflow — ideation, generation, refinement — so the work ships faster and looks current." }
             ].map((item) => (
               <motion.div key={item.title} variants={fadeInUp}>
                 <SaberBorderCard>

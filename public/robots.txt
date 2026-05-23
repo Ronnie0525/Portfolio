@@ -1,5 +1,5 @@
-# Robots.txt for Alcon Advertising
-# https://alcon-online.site
+# Robots.txt for Ronnie Balonon Jr. — Portfolio
+# https://ronniebalonon.com
 
 User-agent: *
 Allow: /
@@ -7,7 +7,7 @@ Disallow: /auth
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://alcon-online.site/sitemap.xml
+Sitemap: https://ronniebalonon.com/sitemap.xml
 
 # Allow all major search engines
 User-agent: Googlebot

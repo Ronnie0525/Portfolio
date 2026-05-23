@@ -91,7 +91,7 @@ const Auth = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sign In - AI Lab | Alvin Jampazar"
+        title="Sign In | Ronnie Balonon Jr."
         description="Sign in or create an account to access AI-powered image and video generation tools."
       />
       

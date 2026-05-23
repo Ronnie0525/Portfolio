@@ -4,7 +4,6 @@ import { Blocks, Bot, Church, Hammer, Hexagon, Leaf, ArrowRight, ExternalLink, L
 
 const platforms = [
   { name: "UIForge", url: "https://www.uiforge.site/", icon: Blocks, description: "UI Component Library" },
-  { name: "Alvin~AI", url: "https://www.alvinai-dev.com/", icon: Bot, description: "AI Development Platform" },
   { name: "WorshipPlatform", url: "https://www.vineyardchrist.com/", icon: Church, description: "Church Management System" },
   { name: "Buildflow", url: "https://www.buildflow-tech.com", icon: Hammer, description: "Construction Tech Platform" },
   { name: "Pixela", url: "https://www.pixela-ai.com", icon: Hexagon, description: "AI Vector & Animation Generator" },

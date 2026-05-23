@@ -74,7 +74,7 @@ const ClientProjects = () => {
     <Layout>
       <SEOHead
         title="Client Web Projects — Live Websites Built"
-        description="Explore live client websites designed and developed by Ronnie Balonon Jr.. From cybersecurity brands to investment platforms — high-impact web solutions for businesses worldwide."
+        description="Explore live client websites designed and developed by Ronnie Balonon Jr. From cybersecurity brands to investment platforms — high-impact web solutions for businesses worldwide."
         keywords="web design portfolio Dubai, web development agency, client websites, Ronnie Balonon Jr. projects, web design Dubai"
         canonicalUrl="/client-projects"
       />

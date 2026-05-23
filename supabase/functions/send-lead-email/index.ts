@@ -96,7 +96,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Received lead form submission");
 
-    // Send notification email to Alvin
+    // Send notification email to Ronnie
     const notificationRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -105,7 +105,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "Alcon Advertising <onboarding@resend.dev>",
-        to: ["alvinjampazar1983@gmail.com"],
+        to: ["ronniebalonon1996@gmail.com"],
         subject: `New Project Inquiry from ${safeName}`,
         html: `
           <!DOCTYPE html>
@@ -210,18 +210,17 @@ const handler = async (req: Request): Promise<Response> => {
                 <p>I've received your inquiry and will get back to you within <strong>12 hours</strong> with more information about how we can work together to bring your vision to life.</p>
                 <p>In the meantime, feel free to:</p>
                 <ul>
-                  <li>Browse our <a href="https://alcon-online.site/portfolio" style="color: #7B2FBE;">portfolio</a> for inspiration</li>
-                  <li>Check out our <a href="https://alcon-online.site/case-studies" style="color: #7B2FBE;">case studies</a></li>
-                  <li>Connect with us on <a href="https://www.linkedin.com/in/alvin-jampazar-306064202/" style="color: #7B2FBE;">LinkedIn</a></li>
+                  <li>Browse our <a href="https://ronniebalonon.com/portfolio" style="color: #7B2FBE;">portfolio</a> for inspiration</li>
+                  <li>Check out our <a href="https://ronniebalonon.com/client-projects" style="color: #7B2FBE;">client projects</a></li>
                 </ul>
                 <p>Need to reach me urgently? Feel free to WhatsApp me directly:</p>
-                <a href="https://wa.me/971561643886" class="cta-button">WhatsApp Me</a>
+                <a href="https://wa.me/971543763091" class="cta-button">WhatsApp Me</a>
                 <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">
                 <p style="color: #666; font-size: 14px;">
                   Best regards,<br>
                   <strong>Alcon Advertising</strong><br>
                   Creative Advertising Agency | Dubai, UAE<br>
-                  <a href="mailto:alvinjampazar1983@gmail.com" style="color: #7B2FBE;">alvinjampazar1983@gmail.com</a>
+                  <a href="mailto:ronniebalonon1996@gmail.com" style="color: #7B2FBE;">ronniebalonon1996@gmail.com</a>
                 </p>
               </div>
             </div>

@@ -103,7 +103,7 @@ const UIUXProjectDetail = () => {
     <Layout>
       <SEOHead
         title={`${project.name} — UI/UX Case Study`}
-        description={`${project.tagline}. A UI/UX design case study by Alvin Jampazar — freelance product designer for startups and brands worldwide.`}
+        description={`${project.tagline}. A UI/UX design case study by Ronnie Balonon Jr. — freelance product designer for startups and brands worldwide.`}
         keywords={`${project.name} UI design, UI/UX case study, app interface design portfolio, digital product designer, freelance product designer`}
         canonicalUrl={`/portfolio/uiux/${project.id}`}
         schemaType="project"

@@ -35,10 +35,10 @@ export const CryptoDashboard = () => (
   <Phone>
     <div className="flex-1 flex flex-col px-5 py-2">
       <div className="flex items-center justify-between mb-3">
-        <span className="text-sm font-bold text-white">Good morning, Alvin</span>
+        <span className="text-sm font-bold text-white">Good morning, Ronnie</span>
         <div className="flex items-center gap-3">
           <div className="relative"><Bell className="w-5 h-5 text-white/40" /><div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-red-500" /></div>
-          <div className="w-8 h-8 rounded-full bg-violet-500/30 flex items-center justify-center text-xs font-bold text-violet-300">A</div>
+          <div className="w-8 h-8 rounded-full bg-violet-500/30 flex items-center justify-center text-xs font-bold text-violet-300">R</div>
         </div>
       </div>
       <div className="rounded-2xl p-4 border border-white/10 mb-3" style={{ background: "rgba(124,92,252,0.15)" }}>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEOHead from "@/components/SEOHead";
 import PhotographyGallery from "@/components/PhotographyGallery";
-import heroImage from "@/assets/services/video-hero.jpg";
+import heroImage from "@/assets/portfolio/photography/wedding-1.jpg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -37,7 +37,7 @@ const PhotographyService = () => {
     <Layout>
       <SEOHead
         title="Photography Services Dubai"
-        description="Professional photography services in Dubai — events, products, corporate, weddings, food photography, and portraits. High-quality visual storytelling by Ronnie Balonon Jr.."
+        description="Professional photography services in Dubai — events, products, corporate, weddings, food photography, and portraits. High-quality visual storytelling by Ronnie Balonon Jr."
         keywords="photography Dubai, event photography UAE, product photography Dubai, corporate photography, wedding photographer Dubai, food photography, portrait photography"
         canonicalUrl="/services/photography"
         schemaType="service"

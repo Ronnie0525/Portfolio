@@ -229,7 +229,7 @@ const UIUXService = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-xl font-heading uppercase tracking-wider text-sm">
-                <Link to="/get-quote">
+                <Link to="/hire-me">
                   Get a Free Quote <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
