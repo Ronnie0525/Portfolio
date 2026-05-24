@@ -36,7 +36,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     <motion.div variants={fadeInUp} className="group relative">
       <Link to={`/portfolio/uiux/${project.id}`}>
         <div
-          className="relative rounded-2xl overflow-hidden border border-white/[0.08] backdrop-blur-xl transition-all duration-500 group-hover:scale-[1.02]"
+          className="relative rounded-2xl overflow-hidden border border-black/15 backdrop-blur-xl transition-all duration-500 group-hover:scale-[1.02]"
           style={{ background: "rgba(255,255,255,0.04)" }}
           onMouseEnter={(e) => {
             e.currentTarget.style.boxShadow = `0 25px 60px -15px ${project.accentGlow}`;
@@ -57,7 +57,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <div
-                  className="w-8 h-8 rounded-xl flex items-center justify-center border border-white/10"
+                  className="w-8 h-8 rounded-xl flex items-center justify-center border border-black/15"
                   style={{ background: `${project.accentFrom}15` }}
                 >
                   <Icon className="w-3.5 h-3.5" style={{ color: project.accentFrom }} />
@@ -65,7 +65,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <span className="text-sm font-semibold text-zinc-200">{project.name}</span>
               </div>
               <span
-                className="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.08em] border border-white/10"
+                className="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.08em] border border-black/15"
                 style={{ background: project.badgeColor, color: project.badgeTextColor }}
               >
                 {project.badge}

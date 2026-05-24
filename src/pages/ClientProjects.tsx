@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Shield, CreditCard, TrendingUp, Leaf, Palette, Globe, CheckCircle2, Users, Award, Zap, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ const clientProjects = [
     icon: TrendingUp,
     gradient: "from-blue-500 via-indigo-400 to-purple-500",
     glowColor: "rgba(99,102,241,0.35)",
-    description: "Created a sophisticated digital presence for Malath Investment — a premium investment and financial advisory firm. The design communicates trust, exclusivity, and financial expertise through every interaction.",
+    description: "Created a sophisticated digital presence for Malath Investment â€” a premium investment and financial advisory firm. The design communicates trust, exclusivity, and financial expertise through every interaction.",
     services: ["Web Design & Development", "UI/UX Design", "Brand Positioning", "Visual Identity"],
     impact: "Elevated brand perception and positioned Malath as a trusted name in the investment sector.",
   },
@@ -34,7 +34,7 @@ const clientProjects = [
     icon: Leaf,
     gradient: "from-lime-400 via-green-400 to-lime-500",
     glowColor: "rgba(132,204,22,0.35)",
-    description: "Designed and developed a modern digital platform for Global Harvest — connecting agricultural communities worldwide with tools for farm management, crop tracking, and marketplace connectivity.",
+    description: "Designed and developed a modern digital platform for Global Harvest â€” connecting agricultural communities worldwide with tools for farm management, crop tracking, and marketplace connectivity.",
     services: ["Web Design & Development", "UI/UX Design", "Platform Strategy", "Brand Identity"],
     impact: "Empowering global agriculture stakeholders with a cutting-edge digital platform that bridges communities and markets.",
   },
@@ -45,7 +45,7 @@ const clientProjects = [
     icon: Palette,
     gradient: "from-rose-500 via-pink-400 to-fuchsia-500",
     glowColor: "rgba(244,63,94,0.35)",
-    description: "Crafted a stunning personal portfolio website for Tina Ramos — a creative professional showcasing her work with an elegant, modern design. The site blends aesthetics with functionality to leave a lasting impression on visitors and potential clients.",
+    description: "Crafted a stunning personal portfolio website for Tina Ramos â€” a creative professional showcasing her work with an elegant, modern design. The site blends aesthetics with functionality to leave a lasting impression on visitors and potential clients.",
     services: ["Web Design & Development", "UI/UX Design", "Brand Identity", "Content Strategy"],
     impact: "Established a compelling online presence that elevates Tina's personal brand and attracts new creative opportunities.",
   },
@@ -56,7 +56,7 @@ const clientProjects = [
     icon: Building2,
     gradient: "from-amber-700 via-yellow-700 to-amber-800",
     glowColor: "rgba(180,130,70,0.35)",
-    description: "Designed and developed a sophisticated web presence for UHUD — a premium real estate and property development company. The platform embodies desert-inspired elegance with warm, earthy tones that reflect the brand's identity and regional heritage.",
+    description: "Designed and developed a sophisticated web presence for UHUD â€” a premium real estate and property development company. The platform embodies desert-inspired elegance with warm, earthy tones that reflect the brand's identity and regional heritage.",
     services: ["Web Design & Development", "UI/UX Design", "Brand Identity", "Digital Strategy"],
     impact: "Delivered a high-end digital experience that captures UHUD's premium positioning and drives qualified property inquiries.",
   },
@@ -73,14 +73,14 @@ const ClientProjects = () => {
   return (
     <Layout>
       <SEOHead
-        title="Client Web Projects — Live Websites Built"
-        description="Explore live client websites designed and developed by Ronnie Balonon Jr. From cybersecurity brands to investment platforms — high-impact web solutions for businesses worldwide."
+        title="Client Web Projects â€” Live Websites Built"
+        description="Explore live client websites designed and developed by Ronnie Balonon Jr. From cybersecurity brands to investment platforms â€” high-impact web solutions for businesses worldwide."
         keywords="web design portfolio Dubai, web development agency, client websites, Ronnie Balonon Jr. projects, web design Dubai"
         canonicalUrl="/client-projects"
       />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="hero-dark relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-20" />
         <div className="container-custom relative z-10">
           <motion.div
@@ -96,7 +96,7 @@ const ClientProjects = () => {
               Websites That <span className="text-gradient">Drive Results</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every project is a live, revenue-generating website — designed to dominate search, convert visitors, and establish market authority.
+              Every project is a live, revenue-generating website â€” designed to dominate search, convert visitors, and establish market authority.
             </motion.p>
           </motion.div>
         </div>
@@ -142,7 +142,7 @@ const ClientProjects = () => {
 
               <div className="p-8 md:p-12 lg:p-14 relative z-10">
                 <div className="grid lg:grid-cols-5 gap-10 items-start">
-                  {/* Left — Info */}
+                  {/* Left â€” Info */}
                   <div className="lg:col-span-3 space-y-6">
                     <div className="flex items-center gap-3">
                       <div
@@ -176,7 +176,7 @@ const ClientProjects = () => {
                     </div>
                   </div>
 
-                  {/* Right — Impact + CTA */}
+                  {/* Right â€” Impact + CTA */}
                   <div className="lg:col-span-2 flex flex-col justify-between gap-8">
                     <div className="glass-card rounded-xl p-6 border border-primary/10">
                       <h4 className="font-heading text-xs uppercase tracking-[0.2em] text-primary mb-3 flex items-center gap-2">

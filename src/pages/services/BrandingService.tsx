@@ -104,7 +104,7 @@ const BrandingService = () => {
       />
 
       {/* Hero Section with Saber Animation & Dark Overlay */}
-      <section className="relative h-[100vh] flex items-center overflow-hidden">
+      <section className="hero-dark relative h-[100vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={heroImage} alt="Brand Identity Design" loading="eager" decoding="async" className="w-full h-full object-cover" />
           {/* Heavy dark overlay for text readability */}

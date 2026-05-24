@@ -107,7 +107,7 @@ const Auth = () => {
           transition={{ duration: 0.5 }}
           className="relative z-10 w-full max-w-md mx-auto px-4"
         >
-          <div className="glass-card p-8 rounded-2xl border border-white/10">
+          <div className="glass-card p-8 rounded-2xl border border-black/15">
             {/* Header */}
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 glass-card rounded-full mb-4">
@@ -138,7 +138,7 @@ const Auth = () => {
                     placeholder="you@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-10 bg-background/50 border-white/10 focus:border-primary"
+                    className="pl-10 bg-background/50 border-black/15 focus:border-primary"
                   />
                 </div>
                 {errors.email && (
@@ -158,7 +158,7 @@ const Auth = () => {
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="pl-10 pr-10 bg-background/50 border-white/10 focus:border-primary"
+                    className="pl-10 pr-10 bg-background/50 border-black/15 focus:border-primary"
                   />
                   <button
                     type="button"

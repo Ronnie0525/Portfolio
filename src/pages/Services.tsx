@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Palette, Monitor, Image, Bot, Share2, Camera, Film, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -70,7 +70,7 @@ const services = [
       "AI marketing automation",
       "Scalable AI content production"
     ],
-    whatYouGet: "A complete AI-powered pipeline — from a single image to a living, cinematic video story ready for every platform."
+    whatYouGet: "A complete AI-powered pipeline â€” from a single image to a living, cinematic video story ready for every platform."
   },
   {
     id: "social",
@@ -120,14 +120,14 @@ const Services = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Freelance Creative Services in Dubai — Ronnie Balonon Jr."
+        title="Freelance Creative Services in Dubai â€” Ronnie Balonon Jr."
         description="Professional freelance designer offering branding, graphic design, UI/UX & web design, motion graphics, video production, and digital marketing. Flexible freelance services with direct communication and faster delivery."
         keywords="freelance advertising services Dubai, freelance branding Dubai, freelance graphic designer Dubai, freelance UI/UX design Dubai, freelance motion graphics Dubai, freelance video production Dubai, creative freelance team Dubai"
         canonicalUrl="/services"
         schemaType="service"
       />
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="hero-dark relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-20" />
         <div className="container-custom relative z-10">
           <motion.div
@@ -143,7 +143,7 @@ const Services = () => {
               Freelance <span className="text-gradient">Creative Solutions</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground mb-8">
-              An independent freelance team delivering professional branding, design, video production, and digital marketing — with direct communication, faster turnaround, and personalized attention.
+              An independent freelance team delivering professional branding, design, video production, and digital marketing â€” with direct communication, faster turnaround, and personalized attention.
             </motion.p>
           </motion.div>
         </div>

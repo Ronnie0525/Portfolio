@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, CheckCircle2, Layers, Smartphone, Palette, PenTool, Users, Target, Figma, MonitorSmartphone, MousePointerClick, LayoutGrid, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,21 +21,21 @@ const services = [
   { icon: LayoutGrid, title: "Wireframing & Prototyping", desc: "Low to high-fidelity wireframes and interactive prototypes that validate ideas before a single pixel is designed." },
   { icon: Palette, title: "Visual & UI Design", desc: "Pixel-perfect interfaces with custom design systems, typography, and color palettes tailored to your brand." },
   { icon: MousePointerClick, title: "Interaction Design", desc: "Micro-interactions, animations, and transitions that make your product feel alive and intuitive." },
-  { icon: MonitorSmartphone, title: "Responsive Design", desc: "Seamless experiences across desktop, tablet, and mobile — every breakpoint is intentional." },
+  { icon: MonitorSmartphone, title: "Responsive Design", desc: "Seamless experiences across desktop, tablet, and mobile â€” every breakpoint is intentional." },
   { icon: Users, title: "Usability Testing", desc: "Real user testing and heuristic evaluations to identify friction and optimize conversion." },
 ];
 
 const process = [
   { step: "01", title: "Discovery", desc: "Understand your business goals, target users, and market landscape through stakeholder interviews and competitive research." },
   { step: "02", title: "Wireframing", desc: "Map user flows and create low-fidelity wireframes to establish information architecture and interaction patterns." },
-  { step: "03", title: "Visual Design", desc: "Craft high-fidelity UI design with a custom design system — colors, typography, components, and spacing." },
+  { step: "03", title: "Visual Design", desc: "Craft high-fidelity UI design with a custom design system â€” colors, typography, components, and spacing." },
   { step: "04", title: "Prototype & Test", desc: "Build interactive prototypes, conduct usability testing, and iterate until every interaction feels effortless." },
 ];
 
 const stats = [
   { value: "50+", label: "Screens Designed" },
   { value: "6", label: "Case Studies" },
-  { value: "4.8★", label: "Avg. Client Rating" },
+  { value: "4.8â˜…", label: "Avg. Client Rating" },
   { value: "100%", label: "On-Time Delivery" },
 ];
 
@@ -54,7 +54,7 @@ const UIUXService = () => {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="hero-dark relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-background to-background" />
           <div className="absolute inset-0 tech-grid opacity-20" />
@@ -76,7 +76,7 @@ const UIUXService = () => {
               I Design Interfaces <br />People <span className="text-gradient">Love to Use.</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              From fintech dashboards to e-commerce platforms — we craft user-centered digital experiences that look stunning and convert. Every pixel has purpose, every interaction tells a story.
+              From fintech dashboards to e-commerce platforms â€” we craft user-centered digital experiences that look stunning and convert. Every pixel has purpose, every interaction tells a story.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-xl font-heading uppercase tracking-wider text-sm">
@@ -125,7 +125,7 @@ const UIUXService = () => {
                 End-to-End <span className="text-gradient">Design Services</span>
               </h2>
               <p className="text-muted-foreground">
-                From initial research to final hand-off — every phase of the design process is handled with precision, strategy, and creative excellence.
+                From initial research to final hand-off â€” every phase of the design process is handled with precision, strategy, and creative excellence.
               </p>
             </motion.div>
 
@@ -225,7 +225,7 @@ const UIUXService = () => {
               Have a Product That Needs Better UX?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Whether you're launching a new app or redesigning an existing platform — let's create an experience your users will love.
+              Whether you're launching a new app or redesigning an existing platform â€” let's create an experience your users will love.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-xl font-heading uppercase tracking-wider text-sm">

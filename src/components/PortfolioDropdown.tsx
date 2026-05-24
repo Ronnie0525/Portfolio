@@ -59,17 +59,17 @@ const PortfolioDropdown = ({ isOpen, onClose }: PortfolioDropdownProps) => {
                       <Link
                         to={category.path}
                         onClick={onClose}
-                        className="flex items-center gap-3.5 px-3 py-2.5 rounded-xl transition-all duration-300 group relative overflow-hidden hover:bg-white/[0.04]"
+                        className="flex items-center gap-3.5 px-3 py-2.5 rounded-xl transition-all duration-300 group relative overflow-hidden hover:bg-black/5"
                       >
                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-purple-500/[0.06] via-transparent to-transparent" />
-                        <div className="relative w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center transition-all duration-300 flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]">
-                          <category.icon className="w-4 h-4 text-black/40 group-hover:text-black transition-all duration-300" />
+                        <div className="relative w-9 h-9 rounded-lg bg-black/5 flex items-center justify-center transition-all duration-300 flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+                          <category.icon className="w-4 h-4 text-black/75 group-hover:text-black transition-all duration-300" />
                         </div>
                         <div className="min-w-0 flex-1 relative z-10">
                           <p className="text-[13px] font-medium text-black/70 group-hover:text-black transition-colors duration-300">{category.name}</p>
-                          <p className="text-[11px] text-black/25 group-hover:text-black/45 leading-tight transition-colors">{category.description}</p>
+                          <p className="text-[11px] text-black/65 group-hover:text-black/75 leading-tight transition-colors">{category.description}</p>
                         </div>
-                        <ArrowRight className="w-3 h-3 text-black/0 group-hover:text-black/40 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                        <ArrowRight className="w-3 h-3 text-black/0 group-hover:text-black/75 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
                       </Link>
                     </motion.div>
                   ))}
@@ -77,9 +77,9 @@ const PortfolioDropdown = ({ isOpen, onClose }: PortfolioDropdownProps) => {
               </div>
 
               {/* Footer */}
-              <div className="px-6 py-3 border-t border-white/[0.04]" style={{ background: "rgba(168,85,247,0.03)" }}>
+              <div className="px-6 py-3 border-t border-black/10" style={{ background: "rgba(168,85,247,0.03)" }}>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-6 text-[11px] text-black/30">
+                  <div className="flex items-center gap-6 text-[11px] text-black/70">
                     <span><strong className="text-black/60 font-semibold">20+</strong> Projects</span>
                     <span><strong className="text-black/60 font-semibold">1</strong> Year</span>
                     <span><strong className="text-black/60 font-semibold">AI</strong> Powered</span>

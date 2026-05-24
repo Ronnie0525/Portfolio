@@ -119,6 +119,46 @@
 }
 
 @layer components {
+  /* Hero sections stay dark — override CSS tokens so descendants resolve to dark values,
+     and flip the sed-replaced text-black/* utilities back to white inside the hero. */
+  .hero-dark {
+    --background: 0 0% 3.1%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 6.7%;
+    --card-foreground: 0 0% 100%;
+    --muted: 0 0% 8.6%;
+    --muted-foreground: 0 0% 60%;
+    --secondary: 0 0% 8.6%;
+    --secondary-foreground: 0 0% 100%;
+    background-color: hsl(0 0% 3.1%);
+    color: #ffffff;
+  }
+  .hero-dark .text-black { color: #ffffff; }
+  .hero-dark .text-black\/90 { color: rgba(255, 255, 255, 0.9); }
+  .hero-dark .text-black\/80 { color: rgba(255, 255, 255, 0.8); }
+  .hero-dark .text-black\/70 { color: rgba(255, 255, 255, 0.7); }
+  .hero-dark .text-black\/60 { color: rgba(255, 255, 255, 0.6); }
+  .hero-dark .text-black\/55 { color: rgba(255, 255, 255, 0.55); }
+  .hero-dark .text-black\/50 { color: rgba(255, 255, 255, 0.5); }
+  .hero-dark .text-black\/40 { color: rgba(255, 255, 255, 0.4); }
+  .hero-dark .text-black\/30 { color: rgba(255, 255, 255, 0.3); }
+  .hero-dark .text-black\/20 { color: rgba(255, 255, 255, 0.2); }
+  .hero-dark .bg-white { background-color: hsl(0 0% 3.1%); }
+  /* Inverse for subtle dark tints we added for white-page card visibility — flip back inside heroes */
+  .hero-dark .bg-black\/5 { background-color: rgba(255, 255, 255, 0.05); }
+  .hero-dark .bg-black\/10 { background-color: rgba(255, 255, 255, 0.08); }
+  .hero-dark .bg-black\/\[0\.06\] { background-color: rgba(255, 255, 255, 0.06); }
+  .hero-dark .bg-black\/\[0\.08\] { background-color: rgba(255, 255, 255, 0.08); }
+  .hero-dark .border-black\/10 { border-color: rgba(255, 255, 255, 0.1); }
+  .hero-dark .border-black\/15 { border-color: rgba(255, 255, 255, 0.15); }
+  .hero-dark .border-black\/20 { border-color: rgba(255, 255, 255, 0.2); }
+  .hero-dark .border-black\/25 { border-color: rgba(255, 255, 255, 0.25); }
+  /* glass-card inside hero — keep dark glass effect */
+  .hero-dark .glass-card {
+    background: rgba(17, 17, 17, 0.8);
+    box-shadow: none;
+  }
+
   /* Label Style */
   .label-style {
     font-family: 'Space Mono', monospace;
@@ -136,12 +176,13 @@
     letter-spacing: 0.15em;
   }
 
-  /* Glassmorphism Card */
+  /* Glassmorphism Card (light theme) */
   .glass-card {
     @apply relative overflow-hidden rounded-xl;
-    background: rgba(255, 255, 255, 0.85);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(123, 47, 190, 0.22);
+    box-shadow: 0 4px 18px rgba(15, 15, 25, 0.06), 0 1px 3px rgba(15, 15, 25, 0.04);
   }
 
   .glass-card::before {

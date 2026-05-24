@@ -38,7 +38,7 @@ const ServiceItem = ({ item, index, onClose, isNew }: { item: any; index: number
     <Link
       to={item.path}
       onClick={onClose}
-      className="flex items-center gap-3.5 px-3 py-2.5 rounded-xl transition-all duration-300 group relative overflow-hidden hover:bg-white/[0.04]"
+      className="flex items-center gap-3.5 px-3 py-2.5 rounded-xl transition-all duration-300 group relative overflow-hidden hover:bg-black/5"
     >
       {/* Hover gradient sweep */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-purple-500/[0.06] via-transparent to-transparent" />
@@ -46,10 +46,10 @@ const ServiceItem = ({ item, index, onClose, isNew }: { item: any; index: number
       <div className={`relative w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-300 flex-shrink-0 ${
         isNew 
           ? 'bg-gradient-to-br from-purple-500/30 to-fuchsia-500/20 group-hover:from-purple-500 group-hover:to-fuchsia-500 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]'
-          : 'bg-white/[0.04] group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]'
+          : 'bg-black/5 group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]'
       }`}>
         <item.icon className={`w-4 h-4 transition-all duration-300 ${
-          isNew ? 'text-purple-300 group-hover:text-black' : 'text-black/40 group-hover:text-black'
+          isNew ? 'text-purple-300 group-hover:text-black' : 'text-black/75 group-hover:text-black'
         }`} />
       </div>
       <div className="min-w-0 flex-1 relative z-10">
@@ -61,9 +61,9 @@ const ServiceItem = ({ item, index, onClose, isNew }: { item: any; index: number
             </span>
           )}
         </div>
-        <p className="text-[11px] text-black/25 group-hover:text-black/45 leading-tight transition-colors">{item.description}</p>
+        <p className="text-[11px] text-black/65 group-hover:text-black/75 leading-tight transition-colors">{item.description}</p>
       </div>
-      <ArrowRight className="w-3 h-3 text-black/0 group-hover:text-black/40 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+      <ArrowRight className="w-3 h-3 text-black/0 group-hover:text-black/75 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
     </Link>
   </motion.div>
 );
@@ -120,7 +120,7 @@ const ServicesMegaDropdown = ({ isOpen, onClose }: ServicesMegaDropdownProps) =>
                   </div>
 
                   {/* Video & Animation Column */}
-                  <div className="border-x border-white/[0.04] px-4">
+                  <div className="border-x border-black/10 px-4">
                     <div className="flex items-center gap-2.5 mb-4 px-1">
                       <div className="w-5 h-5 rounded-md bg-gradient-to-br from-purple-500/20 to-fuchsia-500/10 flex items-center justify-center">
                         <Play className="w-3 h-3 text-purple-400" />
@@ -154,15 +154,15 @@ const ServicesMegaDropdown = ({ isOpen, onClose }: ServicesMegaDropdownProps) =>
               </div>
 
               {/* Footer */}
-              <div className="px-6 py-3 border-t border-white/[0.04]" style={{ background: "rgba(168,85,247,0.03)" }}>
+              <div className="px-6 py-3 border-t border-black/10" style={{ background: "rgba(168,85,247,0.03)" }}>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-6 text-[11px] text-black/30">
+                  <div className="flex items-center gap-6 text-[11px] text-black/70">
                     <span><strong className="text-black/60 font-semibold">4</strong> Core Skills</span>
                     <span><strong className="text-black/60 font-semibold">20+</strong> Projects</span>
                     <span><strong className="text-black/60 font-semibold">AI</strong> Powered</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Link to="/proposals" onClick={onClose} className="flex items-center gap-1.5 text-[11px] font-medium text-black/35 hover:text-black/70 transition-colors">
+                    <Link to="/proposals" onClick={onClose} className="flex items-center gap-1.5 text-[11px] font-medium text-black/70 hover:text-black/70 transition-colors">
                       <FileText className="w-3 h-3" />
                       Proposals
                     </Link>

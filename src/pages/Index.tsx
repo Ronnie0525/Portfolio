@@ -104,7 +104,7 @@ const Index = () => {
       {/* HERO */}
       <section
         ref={heroRef}
-        className="relative min-h-[92vh] flex items-center overflow-hidden noise-overlay scanline"
+        className="hero-dark relative min-h-[92vh] flex items-center overflow-hidden noise-overlay scanline"
       >
         {/* Background image */}
         <div

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Building, GraduationCap, Truck, UtensilsCrossed, Cake, Sparkles, Shield, Heart, Shirt, PartyPopper, Calendar } from "lucide-react";
@@ -25,9 +25,9 @@ import rampThumb from "@/assets/portfolio/videography/ramp-thumb.jpg";
 import galaThumb from "@/assets/portfolio/videography/gala-thumb.jpg";
 import celebrationThumb from "@/assets/portfolio/videography/celebration-thumb.jpg";
 
-// UI/UX thumbnails removed — replaced with UIForge + BuildFlow platform section
+// UI/UX thumbnails removed â€” replaced with UIForge + BuildFlow platform section
 
-// Motion Design thumbnails removed — motion portfolio uses inline video showcase
+// Motion Design thumbnails removed â€” motion portfolio uses inline video showcase
 
 // Import 3D Animation thumbnails
 import realEstate3dThumb from "@/assets/portfolio/3d-animation/3r-realestate-thumb.jpg";
@@ -209,15 +209,15 @@ const Portfolio = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Portfolio — Branding, UI/UX, Motion & Video"
-        description="Explore 700+ creative projects by Ronnie Balonon Jr. Dubai — branding, UI/UX case studies, motion graphics, 2D/3D animation, videography, photography, and social media design for global brands."
+        title="Portfolio â€” Branding, UI/UX, Motion & Video"
+        description="Explore 700+ creative projects by Ronnie Balonon Jr. Dubai â€” branding, UI/UX case studies, motion graphics, 2D/3D animation, videography, photography, and social media design for global brands."
         keywords="creative portfolio Dubai, branding portfolio, UI/UX design portfolio, motion graphics portfolio, video production portfolio, 3D animation portfolio, photography portfolio Dubai"
         canonicalUrl="/portfolio"
         schemaType="portfolio"
         breadcrumbs={[{ name: "Portfolio", url: "/portfolio" }]}
       />
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="hero-dark relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-20" />
         <div className="container-custom relative z-10">
           <motion.div

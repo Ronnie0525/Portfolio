@@ -99,7 +99,7 @@ const GraphicService = () => {
         breadcrumbs={[{ name: "Services", url: "/services" }, { name: "Graphic Design", url: "/services/graphic" }]}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <section className="hero-dark relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={heroImage} alt="Graphic Design & Marketing Services" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />

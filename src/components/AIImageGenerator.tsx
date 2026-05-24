@@ -513,7 +513,7 @@ const AIImageGenerator = () => {
             className="fixed inset-0 z-[100] bg-white/90 flex items-center justify-center p-4"
             onClick={() => setPreviewImage(null)}>
             <button onClick={() => setPreviewImage(null)}
-              className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center z-10">
+              className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/10 hover:bg-white/20 flex items-center justify-center z-10">
               <X className="w-6 h-6 text-black" />
             </button>
 
@@ -521,11 +521,11 @@ const AIImageGenerator = () => {
             {allDisplayImages.length > 1 && (
               <>
                 <button onClick={(e) => { e.stopPropagation(); navigatePreview(-1, allDisplayImages); }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center z-10">
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/10 hover:bg-white/20 flex items-center justify-center z-10">
                   <ChevronLeft className="w-6 h-6 text-black" />
                 </button>
                 <button onClick={(e) => { e.stopPropagation(); navigatePreview(1, allDisplayImages); }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center z-10">
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/10 hover:bg-white/20 flex items-center justify-center z-10">
                   <ChevronRight className="w-6 h-6 text-black" />
                 </button>
               </>

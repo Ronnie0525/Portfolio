@@ -3,7 +3,7 @@ import { Search, ShoppingCart, Home, Tag, Heart, User, Star, ChevronLeft, Shield
 const Phone = ({ children, bg = "#FFFFFF" }: { children: React.ReactNode; bg?: string }) => (
   <div className="bg-white rounded-[2.5rem] p-[6px] w-[280px] mx-auto shadow-2xl shadow-black/50">
     <div className="w-full rounded-[2.2rem] overflow-hidden flex flex-col" style={{ background: bg, height: 560 }}>
-      <div className="flex items-center justify-between px-5 pt-3 pb-1" style={{ background: "#131921" }}><span className="text-[10px] text-black/50 font-medium">9:41</span><div className="w-20 h-5 rounded-full bg-white" /><div className="flex gap-1"><div className="w-4 h-2 rounded-sm bg-white/30" /></div></div>
+      <div className="flex items-center justify-between px-5 pt-3 pb-1" style={{ background: "#131921" }}><span className="text-[10px] text-black/80 font-medium">9:41</span><div className="w-20 h-5 rounded-full bg-white" /><div className="flex gap-1"><div className="w-4 h-2 rounded-sm bg-white/30" /></div></div>
       {children}
     </div>
   </div>
@@ -18,7 +18,7 @@ const TabBar = ({ active = 0 }: { active?: number }) => (
 );
 
 export const CartlyHome = () => (
-  <Phone><div className="flex items-center gap-2 px-4 py-2" style={{background:"#131921"}}><span className="text-sm font-bold text-black">Cartly</span><div className="flex-1 flex items-center gap-1.5 bg-white/10 rounded-lg px-3 py-1.5"><Search className="w-3.5 h-3.5 text-black/40"/><span className="text-[10px] text-black/30">Search...</span></div><div className="relative"><ShoppingCart className="w-5 h-5 text-black"/><div className="absolute -top-1 -right-1.5 w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center text-[7px] text-black font-bold">4</div></div></div>
+  <Phone><div className="flex items-center gap-2 px-4 py-2" style={{background:"#131921"}}><span className="text-sm font-bold text-black">Cartly</span><div className="flex-1 flex items-center gap-1.5 bg-black/10 rounded-lg px-3 py-1.5"><Search className="w-3.5 h-3.5 text-black/75"/><span className="text-[10px] text-black/70">Search...</span></div><div className="relative"><ShoppingCart className="w-5 h-5 text-black"/><div className="absolute -top-1 -right-1.5 w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center text-[7px] text-black font-bold">4</div></div></div>
   <div className="flex-1 flex flex-col px-4 py-2 bg-white">
     <div className="flex gap-1.5 mb-2">{["Electronics","Fashion","Home","Sports"].map((c,i)=><div key={c} className={`px-2.5 py-1 rounded-full text-[9px] font-bold ${i===0?"bg-orange-500 text-black":"bg-gray-100 text-gray-500"}`}>{c}</div>)}</div>
     <div className="rounded-xl px-4 py-2.5 mb-3 bg-gradient-to-r from-orange-500 to-amber-500"><div className="text-xs font-bold text-black">Deals 🔥</div><div className="text-[9px] text-black/80">Up to 60% off</div></div>
@@ -27,7 +27,7 @@ export const CartlyHome = () => (
 );
 
 export const CartlySearch = () => (
-  <Phone><div className="flex items-center gap-2 px-4 py-2" style={{background:"#131921"}}><div className="flex-1 flex items-center gap-1.5 bg-white/10 rounded-lg px-3 py-1.5"><Search className="w-3.5 h-3.5 text-black/40"/><span className="text-[10px] text-black">wireless headphones</span><X className="w-3 h-3 text-black/30 ml-auto"/></div></div>
+  <Phone><div className="flex items-center gap-2 px-4 py-2" style={{background:"#131921"}}><div className="flex-1 flex items-center gap-1.5 bg-black/10 rounded-lg px-3 py-1.5"><Search className="w-3.5 h-3.5 text-black/75"/><span className="text-[10px] text-black">wireless headphones</span><X className="w-3 h-3 text-black/70 ml-auto"/></div></div>
   <div className="flex-1 flex flex-col px-4 py-2 bg-white">
     <div className="flex items-center justify-between mb-2"><span className="text-[10px] text-gray-500">2,481 results</span><span className="text-[10px] text-gray-400">Sort ▾</span></div>
     <div className="flex gap-1.5 mb-3">{["Price","Brand","Rating"].map(f=><div key={f} className="px-2 py-0.5 rounded-full text-[8px] font-medium border border-gray-200 text-gray-500">{f}</div>)}</div>

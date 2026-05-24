@@ -2,10 +2,10 @@ import { Search, ShoppingCart, Home, Tag, Heart, User, Star } from "lucide-react
 
 const CartlyMockup = () => (
   <div className="absolute inset-0 flex flex-col bg-white">
-    <div className="flex items-center justify-between px-3 pt-1.5 pb-1" style={{ background: "#131921" }}><span className="text-[7px] font-medium text-black/50">9:41</span><div className="flex gap-1"><div className="w-2.5 h-1.5 rounded-sm bg-white/30" /><div className="w-3 h-1.5 rounded-sm bg-white/50" /></div></div>
+    <div className="flex items-center justify-between px-3 pt-1.5 pb-1" style={{ background: "#131921" }}><span className="text-[7px] font-medium text-black/80">9:41</span><div className="flex gap-1"><div className="w-2.5 h-1.5 rounded-sm bg-white/30" /><div className="w-3 h-1.5 rounded-sm bg-white/50" /></div></div>
     <div className="flex items-center gap-1.5 px-3 py-1.5" style={{ background: "#131921" }}>
       <span className="text-[9px] font-bold text-black">Cartly</span>
-      <div className="flex-1 flex items-center gap-1 bg-white/10 rounded px-1.5 py-1"><Search className="w-2.5 h-2.5 text-black/40" /><span className="text-[6px] text-black/30">Search...</span></div>
+      <div className="flex-1 flex items-center gap-1 bg-black/10 rounded px-1.5 py-1"><Search className="w-2.5 h-2.5 text-black/75" /><span className="text-[6px] text-black/70">Search...</span></div>
       <div className="relative"><ShoppingCart className="w-3 h-3 text-black" /><div className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500 flex items-center justify-center text-[5px] text-black font-bold">4</div></div>
     </div>
     <div className="flex gap-1 px-3 py-1.5">{["Electronics", "Fashion", "Home"].map((c, i) => <div key={c} className={`px-2 py-0.5 rounded-full text-[6px] font-bold ${i === 0 ? "bg-orange-500 text-black" : "bg-gray-100 text-gray-500"}`}>{c}</div>)}</div>

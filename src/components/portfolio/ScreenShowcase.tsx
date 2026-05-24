@@ -21,21 +21,21 @@ const ScreenShowcase = ({ screens, accentColor, projectName }: ScreenShowcasePro
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.08 }}
-          className="group rounded-2xl border border-white/[0.06] overflow-hidden backdrop-blur-xl hover:scale-[1.02] transition-transform duration-500"
+          className="group rounded-2xl border border-black/15 overflow-hidden backdrop-blur-xl hover:scale-[1.02] transition-transform duration-500"
           style={{ background: `linear-gradient(160deg, ${accentColor}06, rgba(255,255,255,0.95))` }}
         >
           {/* Screen mockup area */}
           <div className="aspect-[4/3] relative" style={{ background: `linear-gradient(135deg, ${accentColor}10, ${accentColor}05)` }}>
             <div className="absolute inset-0 flex items-center justify-center">
               {i % 2 === 0 ? (
-                <Monitor className="w-12 h-12 text-black/10" />
+                <Monitor className="w-12 h-12 text-black/55" />
               ) : (
-                <Smartphone className="w-10 h-10 text-black/10" />
+                <Smartphone className="w-10 h-10 text-black/55" />
               )}
             </div>
             {/* Device frame decoration */}
-            <div className="absolute inset-3 rounded-lg border border-white/[0.04]" />
-            <div className="absolute top-5 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-white/[0.06]" />
+            <div className="absolute inset-3 rounded-lg border border-black/10" />
+            <div className="absolute top-5 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-black/[0.06]" />
           </div>
           <div className="p-4">
             <div className="text-sm font-medium leading-snug">{screen}</div>

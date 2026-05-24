@@ -17,7 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "text-black font-bold uppercase tracking-wider shadow-[0_0_40px_rgba(192,132,252,0.3)] hover:scale-105 hover:shadow-[0_0_50px_rgba(192,132,252,0.5)]",
         heroOutline: "border-2 border-[rgba(123,47,190,0.5)] bg-transparent text-black font-bold uppercase tracking-wider hover:bg-[rgba(123,47,190,0.12)] hover:border-[#C084FC]",
-        glass: "backdrop-blur-xl bg-white/5 border border-[rgba(123,47,190,0.3)] text-black hover:border-[rgba(123,47,190,0.6)] hover:bg-[rgba(123,47,190,0.05)]",
+        glass: "backdrop-blur-xl bg-black/5 border border-[rgba(123,47,190,0.3)] text-black hover:border-[rgba(123,47,190,0.6)] hover:bg-[rgba(123,47,190,0.05)]",
         neon: "relative bg-transparent border border-primary text-primary overflow-hidden shadow-[0_0_10px_rgba(192,132,252,0.3)]",
       },
       size: {

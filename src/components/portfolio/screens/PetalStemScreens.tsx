@@ -3,7 +3,7 @@ import { Flower2, Heart, ShoppingBag, Home, Search, User, ChevronLeft, Sliders, 
 const Phone = ({ children, bg = "#FFF5F5" }: { children: React.ReactNode; bg?: string }) => (
   <div className="bg-white rounded-[2.5rem] p-[6px] w-[280px] mx-auto shadow-2xl shadow-black/50">
     <div className="w-full rounded-[2.2rem] overflow-hidden flex flex-col" style={{ background: bg, height: 560 }}>
-      <div className="flex items-center justify-between px-5 pt-3 pb-1"><span className="text-[10px] text-black/50 font-medium">9:41</span><div className="w-20 h-5 rounded-full bg-white/80" /><div className="flex gap-1"><div className="w-4 h-2 rounded-sm bg-white/30" /></div></div>
+      <div className="flex items-center justify-between px-5 pt-3 pb-1"><span className="text-[10px] text-black/80 font-medium">9:41</span><div className="w-20 h-5 rounded-full bg-white/80" /><div className="flex gap-1"><div className="w-4 h-2 rounded-sm bg-white/30" /></div></div>
       {children}
     </div>
   </div>
