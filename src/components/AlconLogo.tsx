@@ -7,15 +7,14 @@ interface AlconLogoProps {
 const AlconLogo = ({ className = "", showWordmark = true }: AlconLogoProps) => {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      <div className="bg-white rounded-lg p-1 flex items-center justify-center shrink-0" style={{ width: 40, height: 40 }}>
-        <img
-          src="/logo.png"
-          alt="Ronnie Balonon Jr. logo"
-          className="w-full h-full object-contain"
-          width={40}
-          height={40}
-        />
-      </div>
+      <img
+        src="/logo.png"
+        alt="Ronnie Balonon Jr. logo"
+        className="shrink-0 object-contain"
+        width={40}
+        height={40}
+        style={{ width: 40, height: 40 }}
+      />
 
       {showWordmark && (
         <div className="flex flex-col leading-tight">
