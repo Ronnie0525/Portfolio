@@ -330,7 +330,7 @@ const AIVideoGenerator = () => {
               </h4>
             </div>
             <div className="relative group">
-              <div className="aspect-video rounded-xl overflow-hidden border-2 border-border group-hover:border-primary/50 transition-colors bg-white">
+              <div className="aspect-video rounded-xl overflow-hidden border-2 border-border group-hover:border-primary/50 transition-colors bg-black">
                 <video src={generatedVideo.videoUrl} controls autoPlay loop className="w-full h-full object-contain" poster={generatedVideo.thumbnail} />
               </div>
               <div className="mt-4 flex justify-center gap-3">

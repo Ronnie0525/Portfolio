@@ -34,7 +34,7 @@ const UIUXPortfolioGrid = () => {
         {/* Stat badges */}
         <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-3">
           {["6 Case Studies", "50+ Screens Designed", "Figma & Adobe XD", "Dubai, UAE"].map(stat => (
-            <span key={stat} className="px-4 py-2 rounded-full text-xs font-medium text-zinc-300 bg-black/5 border border-black/15">
+            <span key={stat} className="px-4 py-2 rounded-full text-xs font-medium text-zinc-300 bg-white/5 border border-white/10">
               {stat}
             </span>
           ))}

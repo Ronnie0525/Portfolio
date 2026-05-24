@@ -33,7 +33,7 @@ const ProcessTimeline = ({ accentColor }: ProcessTimelineProps) => (
             className="text-center space-y-3"
           >
             <div
-              className="w-14 h-14 rounded-2xl mx-auto flex items-center justify-center border border-black/15"
+              className="w-14 h-14 rounded-2xl mx-auto flex items-center justify-center border border-white/[0.06]"
               style={{ background: `${accentColor}15` }}
             >
               <Icon className="w-6 h-6" style={{ color: accentColor }} />

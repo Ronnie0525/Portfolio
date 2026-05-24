@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Award, Users, Zap, Play, X, Video, Rocket, Globe, Shield, Target } from "lucide-react";
@@ -18,16 +18,16 @@ const staggerContainer = {
 
 const values = [
   { icon: Rocket, title: "Bold Innovation", description: "I push creative boundaries with AI-driven workflows and clean, modern design." },
-  { icon: Target, title: "Strategic Precision", description: "Every piece I deliver is audience-aware, on-brief, and built to perform â€” not just to look good." },
+  { icon: Target, title: "Strategic Precision", description: "Every piece I deliver is audience-aware, on-brief, and built to perform — not just to look good." },
   { icon: Globe, title: "UAE-Rooted", description: "Based in Dubai, fluent in the visual language of the region, and ready to ship across cultures." },
-  { icon: Shield, title: "Brand Care", description: "I treat your brand like my own â€” consistent, careful, and protected across every touchpoint." },
+  { icon: Shield, title: "Brand Care", description: "I treat your brand like my own — consistent, careful, and protected across every touchpoint." },
 ];
 
 const stats = [
   { value: "20+", label: "Projects Delivered" },
   { value: "1", label: "Year Experience" },
   { value: "AI", label: "Powered Workflow" },
-  { value: "PH â†’ AE", label: "Philippines & Dubai" },
+  { value: "PH → AE", label: "Philippines & Dubai" },
 ];
 
 const aiVideos = [
@@ -52,8 +52,8 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About Ronnie Balonon Jr. â€” Graphic Designer & AI Creative Dubai"
-        description="Get to know Ronnie Balonon Jr. â€” Dubai-based freelance graphic designer with strong AI knowledge. Social media, UI/UX & web design, photography, and video editing."
+        title="About Ronnie Balonon Jr. — Graphic Designer & AI Creative Dubai"
+        description="Get to know Ronnie Balonon Jr. — Dubai-based freelance graphic designer with strong AI knowledge. Social media, UI/UX & web design, photography, and video editing."
         keywords="about Ronnie Balonon, graphic designer Dubai, AI designer Dubai, freelance designer UAE"
         canonicalUrl="/about"
         schemaType="about"
@@ -61,7 +61,7 @@ const About = () => {
       />
 
       {/* Hero */}
-      <section className="hero-dark relative min-h-[70vh] flex items-center overflow-hidden pt-24 pb-16">
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-24 pb-16">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background" />
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
@@ -154,9 +154,9 @@ const About = () => {
               <h2 className="font-heading text-3xl md:text-5xl font-bold mt-4">A Year of <span className="text-gradient">Real Client Work</span></h2>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-              <p>I'm a freelance graphic designer with strong knowledge in Artificial Intelligence. I started out in the Philippines and now work from Dubai â€” that's 1 year of combined, hands-on client work across two markets.</p>
+              <p>I'm a freelance graphic designer with strong knowledge in Artificial Intelligence. I started out in the Philippines and now work from Dubai — that's 1 year of combined, hands-on client work across two markets.</p>
               <p>My focus areas are social media management, UI/UX & web design, photography, and video editing. I blend solid design fundamentals with AI tooling to ship work that's fast, on-brand, and built for today's platforms.</p>
-              <p>Every project gets a direct, one-on-one relationship â€” no middlemen, no handoffs. Just clear briefs, sharp execution, and content that's impossible to ignore.</p>
+              <p>Every project gets a direct, one-on-one relationship — no middlemen, no handoffs. Just clear briefs, sharp execution, and content that's impossible to ignore.</p>
             </motion.div>
           </div>
         </div>
@@ -223,7 +223,7 @@ const About = () => {
             <Award className="w-12 h-12 text-primary mx-auto mb-6" />
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">My Mission</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              "To help brands stand out with strategic, AI-powered design â€” clean visuals, sharp execution, and content that actually moves the needle."
+              "To help brands stand out with strategic, AI-powered design — clean visuals, sharp execution, and content that actually moves the needle."
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">Let's Build Something Together <ArrowRight className="w-4 h-4" /></Link>

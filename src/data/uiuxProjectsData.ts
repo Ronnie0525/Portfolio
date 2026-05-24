@@ -85,7 +85,7 @@ export const uiuxProjects: UIUXProject[] = [
     ],
     designSystem: {
       colors: [
-        { name: "Primary Text", hex: "#f0f0f0" },
+        { name: "Primary Text", hex: "#1A1A1A" },
         { name: "Background", hex: "#FAF9F6" },
         { name: "Gold", hex: "#C9A87C" },
         { name: "Border", hex: "#E8E4DF" },

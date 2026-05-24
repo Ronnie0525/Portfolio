@@ -11,13 +11,13 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_10px_rgba(192,132,252,0.3)]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-[rgba(123,47,190,0.45)] bg-transparent text-black hover:bg-[rgba(123,47,190,0.12)] hover:border-[#C084FC]",
+        outline: "border border-[rgba(123,47,190,0.45)] bg-transparent text-white hover:bg-[rgba(123,47,190,0.12)] hover:border-[#C084FC]",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-[rgba(123,47,190,0.1)] hover:text-[#C084FC]",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "text-black font-bold uppercase tracking-wider shadow-[0_0_40px_rgba(192,132,252,0.3)] hover:scale-105 hover:shadow-[0_0_50px_rgba(192,132,252,0.5)]",
-        heroOutline: "border-2 border-[rgba(123,47,190,0.5)] bg-transparent text-black font-bold uppercase tracking-wider hover:bg-[rgba(123,47,190,0.12)] hover:border-[#C084FC]",
-        glass: "backdrop-blur-xl bg-black/5 border border-[rgba(123,47,190,0.3)] text-black hover:border-[rgba(123,47,190,0.6)] hover:bg-[rgba(123,47,190,0.05)]",
+        hero: "text-white font-bold uppercase tracking-wider shadow-[0_0_40px_rgba(192,132,252,0.3)] hover:scale-105 hover:shadow-[0_0_50px_rgba(192,132,252,0.5)]",
+        heroOutline: "border-2 border-[rgba(123,47,190,0.5)] bg-transparent text-white font-bold uppercase tracking-wider hover:bg-[rgba(123,47,190,0.12)] hover:border-[#C084FC]",
+        glass: "backdrop-blur-xl bg-white/5 border border-[rgba(123,47,190,0.3)] text-white hover:border-[rgba(123,47,190,0.6)] hover:bg-[rgba(123,47,190,0.05)]",
         neon: "relative bg-transparent border border-primary text-primary overflow-hidden shadow-[0_0_10px_rgba(192,132,252,0.3)]",
       },
       size: {

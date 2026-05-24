@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Image, PenTool, Sparkles, Clapperboard, Box, Globe, Bot, MessageSquare, Layers, Sun, Cpu, Film, Wand2, Paintbrush, Monitor, Music, FileCheck, Flame, Puzzle, Palette, Camera, Zap, Star, CircuitBoard, Lightbulb, Rocket, Heart } from "lucide-react";
@@ -62,7 +62,7 @@ const Tools = () => {
       />
 
       {/* Hero */}
-      <section className="hero-dark relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-20" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
         <div className="container-custom relative z-10">
@@ -72,7 +72,7 @@ const Tools = () => {
               The Arsenal Behind <span className="text-gradient">Every Pixel</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Great design isn't just talent â€” it's mastering the right tools. From industry-standard software like Adobe Creative Suite and Figma to revolutionary AI platforms like Midjourney and ChatGPT, every project is powered by a carefully curated technology ecosystem built for speed, precision, and creative excellence.
+              Great design isn't just talent — it's mastering the right tools. From industry-standard software like Adobe Creative Suite and Figma to revolutionary AI platforms like Midjourney and ChatGPT, every project is powered by a carefully curated technology ecosystem built for speed, precision, and creative excellence.
             </motion.p>
           </motion.div>
         </div>
@@ -105,10 +105,10 @@ const Tools = () => {
               <span className="text-primary font-heading text-sm uppercase tracking-widest">Design & Production</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-6">Professional Software That Defines Industry Standards</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Every brand deserves pixel-perfect execution. With hands-on experience across the Adobe Creative Suite and Figma, I deliver designs that don't just look stunning â€” they perform. From high-fidelity UI prototypes in Figma to clean print layouts in InDesign, each tool is chosen with purpose.
+                Every brand deserves pixel-perfect execution. With hands-on experience across the Adobe Creative Suite and Figma, I deliver designs that don't just look stunning — they perform. From high-fidelity UI prototypes in Figma to clean print layouts in InDesign, each tool is chosen with purpose.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Whether it's a brand identity in Illustrator, a polished video edit in Premiere Pro, or a lifestyle shoot graded in Lightroom â€” mastery of these tools means faster turnaround, higher quality, and designs that scale across every medium.
+                Whether it's a brand identity in Illustrator, a polished video edit in Premiere Pro, or a lifestyle shoot graded in Lightroom — mastery of these tools means faster turnaround, higher quality, and designs that scale across every medium.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="grid grid-cols-3 gap-3">
@@ -171,10 +171,10 @@ const Tools = () => {
               <span className="text-primary font-heading text-sm uppercase tracking-widest">Artificial Intelligence</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-6">AI-Powered Creativity That Accelerates Results</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The future of design is AI-augmented â€” and I'm already there. By integrating platforms like Midjourney for rapid concept visualization, ChatGPT for strategic copywriting, and Runway ML for AI-driven video production, every project benefits from faster ideation, smarter iteration, and output that would take traditional workflows 10x longer.
+                The future of design is AI-augmented — and I'm already there. By integrating platforms like Midjourney for rapid concept visualization, ChatGPT for strategic copywriting, and Runway ML for AI-driven video production, every project benefits from faster ideation, smarter iteration, and output that would take traditional workflows 10x longer.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                AI don't replace creativity â€” it supercharges it. From generating mood boards in seconds with Leonardo AI to upscaling imagery with Magnific AI, these tools allow me to explore more ideas, refine faster, and deliver concepts that push creative boundaries while staying on budget and on schedule.
+                AI don't replace creativity — it supercharges it. From generating mood boards in seconds with Leonardo AI to upscaling imagery with Magnific AI, these tools allow me to explore more ideas, refine faster, and deliver concepts that push creative boundaries while staying on budget and on schedule.
               </p>
             </motion.div>
           </div>
@@ -204,14 +204,14 @@ const Tools = () => {
             <span className="text-primary font-heading text-sm uppercase tracking-widest">Why It Matters</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-6">Tools Are Only as Powerful as the Expert Behind Them</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Owning a camera doesn't make you a photographer. Similarly, having access to 30+ professional tools means nothing without deep expertise in each one. Every tool in this stack has been battle-tested across hundreds of real-world projects â€” from startup MVPs to enterprise brand systems.
+              Owning a camera doesn't make you a photographer. Similarly, having access to 30+ professional tools means nothing without deep expertise in each one. Every tool in this stack has been battle-tested across hundreds of real-world projects — from startup MVPs to enterprise brand systems.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { title: "Speed Without Sacrifice", desc: "AI-accelerated workflows cut production time by up to 60% without compromising on quality or creative vision." },
-              { title: "End-to-End Capability", desc: "From initial concept sketch to final deployed website â€” one designer, one seamless pipeline, zero handoff friction." },
+              { title: "End-to-End Capability", desc: "From initial concept sketch to final deployed website — one designer, one seamless pipeline, zero handoff friction." },
               { title: "Future-Ready Approach", desc: "Continuously adopting emerging tools and AI platforms ensures your brand stays ahead of design trends, not behind them." },
             ].map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glass-card p-6 text-center">
@@ -229,7 +229,7 @@ const Tools = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Ready to Work With a Tech-Powered Creative Expert?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Stop settling for designers who use one tool. Get a creative partner who commands an entire technology ecosystem â€” delivering faster, smarter, and more impactful results for your brand.
+              Stop settling for designers who use one tool. Get a creative partner who commands an entire technology ecosystem — delivering faster, smarter, and more impactful results for your brand.
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/hire-me">Let's Build Something Extraordinary <ArrowRight className="w-4 h-4" /></Link>

@@ -37,7 +37,7 @@ const OptimizedImage = ({ src, alt, className, width, height, priority = false }
     <div ref={imgRef} className={cn("relative overflow-hidden", className)}>
       {/* Placeholder shimmer */}
       {!loaded && (
-        <div className="absolute inset-0 bg-black/5 animate-pulse" />
+        <div className="absolute inset-0 bg-white/[0.03] animate-pulse" />
       )}
       
       {inView && (

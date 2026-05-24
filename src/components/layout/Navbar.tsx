@@ -99,7 +99,7 @@ const Navbar = () => {
       }} />
 
       <div className="overflow-visible transition-all duration-500" style={{
-        background: scrolled ? "rgba(255,255,255,0.92)" : "rgba(255,255,255,0.6)",
+        background: scrolled ? "rgba(5,5,5,0.92)" : "rgba(8,8,8,0.6)",
         backdropFilter: "blur(30px) saturate(200%)",
         borderBottom: scrolled ? "1px solid rgba(123,47,190,0.15)" : "1px solid transparent"
       }}>
@@ -139,10 +139,10 @@ const Navbar = () => {
                     to={item.path} 
                     className={`relative px-3.5 py-2 text-[13px] font-medium tracking-wide transition-all duration-300 flex items-center gap-1.5 rounded-lg group ${
                       isActive(item.path) 
-                        ? "text-black" 
+                        ? "text-white" 
                         : activeDropdown === item.name || (item.isPortfolio && portfolioDropdownOpen) || (item.isMegaServices && servicesDropdownOpen) || (item.isMegaPlatform && platformDropdownOpen) 
-                          ? "text-black" 
-                          : "text-black/55 hover:text-black"
+                          ? "text-white" 
+                          : "text-white/55 hover:text-white"
                     }`}
                   >
                     {/* Active indicator dot */}
@@ -168,7 +168,7 @@ const Navbar = () => {
                         <div className="relative">
                           <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-b from-purple-500/25 via-purple-500/8 to-transparent" />
                           <div className="relative p-2 rounded-xl overflow-hidden" style={{ 
-                            background: "rgba(255,255,255,0.95)", 
+                            background: "rgba(8,8,8,0.95)", 
                             backdropFilter: "blur(40px) saturate(180%)",
                           }}>
                             <div className="absolute top-0 left-0 right-0 h-[1px] overflow-hidden">
@@ -178,12 +178,12 @@ const Navbar = () => {
                               <motion.div key={subItem.name} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03, duration: 0.2 }}>
                                 <Link 
                                   to={subItem.path} 
-                                  className="flex items-center gap-3 px-3 py-2.5 text-sm text-black/60 hover:text-black rounded-lg transition-all duration-300 group relative overflow-hidden hover:bg-black/5"
+                                  className="flex items-center gap-3 px-3 py-2.5 text-sm text-white/60 hover:text-white rounded-lg transition-all duration-300 group relative overflow-hidden hover:bg-white/[0.04]"
                                 >
                                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-purple-500/[0.06] via-transparent to-transparent" />
                                   {subItem.icon && (
-                                    <div className="w-7 h-7 rounded-md bg-black/5 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all duration-300">
-                                      <subItem.icon className="w-3.5 h-3.5 text-black/70 group-hover:text-black transition-colors duration-300" />
+                                    <div className="w-7 h-7 rounded-md bg-white/[0.04] flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all duration-300">
+                                      <subItem.icon className="w-3.5 h-3.5 text-white/35 group-hover:text-white transition-colors duration-300" />
                                     </div>
                                   )}
                                   <span className="relative z-10">{subItem.name}</span>
@@ -209,7 +209,7 @@ const Navbar = () => {
                         <div className="relative">
                           <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-b from-purple-500/25 via-purple-500/8 to-transparent" />
                           <div className="relative p-2 rounded-xl overflow-hidden" style={{ 
-                            background: "rgba(255,255,255,0.95)", 
+                            background: "rgba(8,8,8,0.95)", 
                             backdropFilter: "blur(40px) saturate(180%)",
                           }}>
                             <div className="absolute top-0 left-0 right-0 h-[1px] overflow-hidden">
@@ -221,11 +221,11 @@ const Navbar = () => {
                                   href={subItem.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-center gap-3 px-3 py-2.5 text-sm text-black/60 hover:text-black rounded-lg transition-all duration-300 group relative overflow-hidden hover:bg-black/5"
+                                  className="flex items-center gap-3 px-3 py-2.5 text-sm text-white/60 hover:text-white rounded-lg transition-all duration-300 group relative overflow-hidden hover:bg-white/[0.04]"
                                 >
                                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-purple-500/[0.06] via-transparent to-transparent" />
-                                  <div className="w-7 h-7 rounded-md bg-black/5 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all duration-300">
-                                    <subItem.icon className="w-3.5 h-3.5 text-black/70 group-hover:text-black transition-colors duration-300" />
+                                  <div className="w-7 h-7 rounded-md bg-white/[0.04] flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-500/80 group-hover:to-fuchsia-500/80 group-hover:shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all duration-300">
+                                    <subItem.icon className="w-3.5 h-3.5 text-white/35 group-hover:text-white transition-colors duration-300" />
                                   </div>
                                   <span className="relative z-10">{subItem.name}</span>
                                 </a>
@@ -255,7 +255,7 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center gap-3">
               <Link
                 to="/contact"
-                className="relative flex items-center gap-2 px-5 py-2 rounded-[5px] font-medium text-sm text-black overflow-hidden group transition-all duration-300 hover:scale-[1.03]"
+                className="relative flex items-center gap-2 px-5 py-2 rounded-[5px] font-medium text-sm text-white overflow-hidden group transition-all duration-300 hover:scale-[1.03]"
                 style={{ 
                   background: "rgba(123,47,190,0.15)",
                 }}
@@ -286,7 +286,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden relative p-2 text-black" aria-label="Toggle menu">
+            <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden relative p-2 text-white" aria-label="Toggle menu">
               <div className="relative z-10">
                 {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </div>
@@ -302,17 +302,17 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }} 
             animate={{ opacity: 1, height: "auto" }} 
             exit={{ opacity: 0, height: 0 }} 
-            className="lg:hidden" style={{ background: "rgba(255,255,255,0.98)", backdropFilter: "blur(30px)", borderBottom: "1px solid rgba(123,47,190,0.12)" }}
+            className="lg:hidden" style={{ background: "rgba(5,5,5,0.98)", backdropFilter: "blur(30px)", borderBottom: "1px solid rgba(123,47,190,0.12)" }}
           >
             <div className="container-custom py-6 mx-[10px]">
               {/* Mobile Brand Header */}
-              <div className="flex items-center gap-4 pb-6 mb-6 border-b border-black/15">
+              <div className="flex items-center gap-4 pb-6 mb-6 border-b border-white/[0.06]">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-primary to-purple-accent flex items-center justify-center">
-                  <span className="font-heading font-bold text-black text-base">R</span>
+                  <span className="font-heading font-bold text-white text-base">R</span>
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-base text-black">Ronnie Balonon Jr.</p>
-                  <p className="text-xs text-black/70">Designer · AI · Dubai</p>
+                  <p className="font-heading font-bold text-base text-white">Ronnie Balonon Jr.</p>
+                  <p className="text-xs text-white/35">Designer · AI · Dubai</p>
                 </div>
               </div>
 
@@ -322,19 +322,19 @@ const Navbar = () => {
                 <div>
                   <button
                     onClick={() => setActiveDropdown(activeDropdown === "mobile-services" ? null : "mobile-services")}
-                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-black hover:bg-black/5 transition-colors"
+                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-white hover:bg-white/[0.03] transition-colors"
                   >
                     Services
-                    <ChevronDown className={`w-4 h-4 text-black/70 transition-transform duration-200 ${activeDropdown === "mobile-services" ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-4 h-4 text-white/30 transition-transform duration-200 ${activeDropdown === "mobile-services" ? "rotate-180" : ""}`} />
                   </button>
                   <AnimatePresence>
                     {activeDropdown === "mobile-services" && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
-                        <Link to="/services" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-purple-glow font-medium hover:bg-black/5 transition-all">
+                        <Link to="/services" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-purple-glow font-medium hover:bg-white/[0.03] transition-all">
                           View All Services
                         </Link>
                         {mobileServiceItems.map(item => (
-                          <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-black/80 hover:text-black hover:bg-black/5 transition-all">
+                          <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/[0.03] transition-all">
                             <item.icon className="w-4 h-4 text-purple-mid/40" />
                             {item.name}
                           </Link>
@@ -345,7 +345,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Portfolio */}
-                <Link to="/portfolio" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-base font-semibold text-black hover:bg-black/5 transition-colors">
+                <Link to="/portfolio" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-base font-semibold text-white hover:bg-white/[0.03] transition-colors">
                   Portfolio
                 </Link>
 
@@ -354,16 +354,16 @@ const Navbar = () => {
                   <div key={item.name}>
                     <button
                       onClick={() => setActiveDropdown(activeDropdown === "mobile-expertise" ? null : "mobile-expertise")}
-                      className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-black hover:bg-black/5 transition-colors"
+                      className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-white hover:bg-white/[0.03] transition-colors"
                     >
                       {item.name}
-                      <ChevronDown className={`w-4 h-4 text-black/70 transition-transform duration-200 ${activeDropdown === "mobile-expertise" ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 text-white/30 transition-transform duration-200 ${activeDropdown === "mobile-expertise" ? "rotate-180" : ""}`} />
                     </button>
                     <AnimatePresence>
                       {activeDropdown === "mobile-expertise" && (
                         <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
                           {item.dropdown?.map(subItem => (
-                            <Link key={subItem.name} to={subItem.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-black/80 hover:text-black hover:bg-black/5 transition-all">
+                            <Link key={subItem.name} to={subItem.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/[0.03] transition-all">
                               <subItem.icon className="w-4 h-4 text-purple-mid/40" />
                               {subItem.name}
                             </Link>
@@ -378,19 +378,19 @@ const Navbar = () => {
                 <div>
                   <button
                     onClick={() => setActiveDropdown(activeDropdown === "mobile-platforms" ? null : "mobile-platforms")}
-                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-black hover:bg-black/5 transition-colors"
+                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-white hover:bg-white/[0.03] transition-colors"
                   >
                     Digital Platform
-                    <ChevronDown className={`w-4 h-4 text-black/70 transition-transform duration-200 ${activeDropdown === "mobile-platforms" ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-4 h-4 text-white/30 transition-transform duration-200 ${activeDropdown === "mobile-platforms" ? "rotate-180" : ""}`} />
                   </button>
                   <AnimatePresence>
                     {activeDropdown === "mobile-platforms" && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
-                        <Link to="/digital-platforms" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-purple-glow font-medium hover:bg-black/5 transition-all">
+                        <Link to="/digital-platforms" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-purple-glow font-medium hover:bg-white/[0.03] transition-all">
                           View All Platforms
                         </Link>
                         {mobilePlatformItems.map(item => (
-                          <a key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-black/80 hover:text-black hover:bg-black/5 transition-all">
+                          <a key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/[0.03] transition-all">
                             <item.icon className="w-4 h-4 text-purple-mid/40" />
                             {item.name}
                           </a>
@@ -405,16 +405,16 @@ const Navbar = () => {
                   <div key={item.name}>
                     <button
                       onClick={() => setActiveDropdown(activeDropdown === "mobile-clients" ? null : "mobile-clients")}
-                      className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-black hover:bg-black/5 transition-colors"
+                      className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-semibold text-white hover:bg-white/[0.03] transition-colors"
                     >
                       {item.name}
-                      <ChevronDown className={`w-4 h-4 text-black/70 transition-transform duration-200 ${activeDropdown === "mobile-clients" ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 text-white/30 transition-transform duration-200 ${activeDropdown === "mobile-clients" ? "rotate-180" : ""}`} />
                     </button>
                     <AnimatePresence>
                       {activeDropdown === "mobile-clients" && (
                         <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
                           {item.externalDropdown?.map((subItem: ExternalItem) => (
-                            <a key={subItem.name} href={subItem.url} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-black/80 hover:text-black hover:bg-black/5 transition-all">
+                            <a key={subItem.name} href={subItem.url} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-6 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/[0.03] transition-all">
                               <subItem.icon className="w-4 h-4 text-purple-mid/40" />
                               {subItem.name}
                             </a>
@@ -427,8 +427,8 @@ const Navbar = () => {
               </nav>
 
               {/* Mobile CTAs */}
-              <div className="space-y-3 pt-4 border-t border-black/15">
-                <Link to="/contact" onClick={() => setIsOpen(false)} className="relative flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl font-medium text-sm text-black overflow-hidden group transition-all duration-300" style={{ background: "linear-gradient(135deg, #7B2FBE, #E879F9)" }}>
+              <div className="space-y-3 pt-4 border-t border-white/[0.06]">
+                <Link to="/contact" onClick={() => setIsOpen(false)} className="relative flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl font-medium text-sm text-white overflow-hidden group transition-all duration-300" style={{ background: "linear-gradient(135deg, #7B2FBE, #E879F9)" }}>
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                   <Sparkles className="w-4 h-4" />
                   Contact
@@ -436,12 +436,12 @@ const Navbar = () => {
               </div>
 
               {/* Mobile Contact Info */}
-              <div className="mt-6 pt-6 border-t border-black/15 space-y-2">
-                <a href="mailto:ronniebalonon1996@gmail.com" className="flex items-center gap-2 text-sm text-black/70 hover:text-purple-glow">
+              <div className="mt-6 pt-6 border-t border-white/[0.06] space-y-2">
+                <a href="mailto:ronniebalonon1996@gmail.com" className="flex items-center gap-2 text-sm text-white/35 hover:text-purple-glow">
                   <Mail className="w-4 h-4" />
                   ronniebalonon1996@gmail.com
                 </a>
-                <a href="https://wa.me/971543763091" className="flex items-center gap-2 text-sm text-black/70 hover:text-purple-glow">
+                <a href="https://wa.me/971543763091" className="flex items-center gap-2 text-sm text-white/35 hover:text-purple-glow">
                   <Phone className="w-4 h-4" />
                   +971 54 376 3091
                 </a>

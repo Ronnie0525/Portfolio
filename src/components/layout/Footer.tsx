@@ -26,27 +26,27 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative" style={{ background: "#ffffff", borderTop: "1px solid rgba(123,47,190,0.15)" }}>
+    <footer className="relative" style={{ background: "#080808", borderTop: "1px solid rgba(123,47,190,0.15)" }}>
       {/* CTA Banner */}
       <div className="container-custom py-12 border-b border-purple-primary/20">
         <div className="relative overflow-hidden rounded-2xl p-8 md:p-12" style={{ background: "linear-gradient(135deg, rgba(123,47,190,0.2), rgba(232,121,249,0.05), transparent)" }}>
           <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-black">
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white">
                 Ready to Make Your Brand Impossible to Ignore?
               </h3>
-              <p className="text-black/60 max-w-md">
+              <p className="text-white/60 max-w-md">
                 Let's create work that performs — clean design, on-brand content, and AI-powered turnaround.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg" asChild className="text-black font-mono uppercase tracking-wider" style={{ background: "linear-gradient(135deg, #7B2FBE, #E879F9)" }}>
+              <Button size="lg" asChild className="text-white font-mono uppercase tracking-wider" style={{ background: "linear-gradient(135deg, #7B2FBE, #E879F9)" }}>
                 <Link to="/contact" className="flex items-center gap-2">
                   Start a Project
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="border-purple-primary/50 text-black hover:bg-purple-primary/10">
+              <Button variant="outline" size="lg" asChild className="border-purple-primary/50 text-white hover:bg-purple-primary/10">
                 <Link to="/contact">Contact Me</Link>
               </Button>
             </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-6">
               <AlconLogo />
             </Link>
-            <p className="text-black/42 mb-6 max-w-sm text-sm leading-relaxed">
+            <p className="text-white/42 mb-6 max-w-sm text-sm leading-relaxed">
               Graphic designer with strong knowledge in Artificial Intelligence, based in Dubai. Social media, UI/UX, photography, and video editing — crafted to make your brand impossible to ignore.
             </p>
 
@@ -96,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {services.map(link => (
                 <li key={link.name}>
-                  <Link to={link.path} className="flex items-center gap-2 text-sm text-black/42 hover:text-black transition-colors group">
+                  <Link to={link.path} className="flex items-center gap-2 text-sm text-white/42 hover:text-white transition-colors group">
                     <link.icon className="w-3.5 h-3.5 text-purple-mid/50 group-hover:text-purple-glow transition-colors" />
                     <span className="animated-underline">{link.name}</span>
                   </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {portfolio.map(link => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-sm text-black/42 hover:text-black transition-colors animated-underline">
+                  <Link to={link.path} className="text-sm text-white/42 hover:text-white transition-colors animated-underline">
                     {link.name}
                   </Link>
                 </li>
@@ -129,10 +129,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-purple-primary/15" style={{ background: "rgba(255,255,255,0.5)" }}>
+      <div className="border-t border-purple-primary/15" style={{ background: "rgba(8,8,8,0.5)" }}>
         <div className="container-custom py-6">
           <div className="flex justify-center items-center">
-            <p className="text-sm text-black/42">
+            <p className="text-sm text-white/42">
               © {currentYear} Ronnie Balonon Jr. All rights reserved.
             </p>
           </div>

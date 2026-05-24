@@ -15,39 +15,7 @@
     --purple-accent: 300 90% 72%;
   }
 
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 4%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 4%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
-    --primary: 270 63% 47%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 4%;
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 35%;
-    --accent: 300 90% 72%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 270 63% 47% / 0.22;
-    --input: 0 0% 90%;
-    --ring: 270 63% 47%;
-    --glass-bg: 0 0% 100%;
-    --glass-border: 270 63% 47%;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 4%;
-    --sidebar-primary: 270 63% 47%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 95%;
-    --sidebar-accent-foreground: 0 0% 4%;
-    --sidebar-border: 270 63% 47% / 0.22;
-    --sidebar-ring: 270 63% 47%;
-  }
-
-  .dark {
+  .dark, :root {
     --background: 0 0% 3.1%;
     --foreground: 0 0% 100%;
     --card: 0 0% 6.7%;
@@ -119,46 +87,6 @@
 }
 
 @layer components {
-  /* Hero sections stay dark — override CSS tokens so descendants resolve to dark values,
-     and flip the sed-replaced text-black/* utilities back to white inside the hero. */
-  .hero-dark {
-    --background: 0 0% 3.1%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 6.7%;
-    --card-foreground: 0 0% 100%;
-    --muted: 0 0% 8.6%;
-    --muted-foreground: 0 0% 60%;
-    --secondary: 0 0% 8.6%;
-    --secondary-foreground: 0 0% 100%;
-    background-color: hsl(0 0% 3.1%);
-    color: #ffffff;
-  }
-  .hero-dark .text-black { color: #ffffff; }
-  .hero-dark .text-black\/90 { color: rgba(255, 255, 255, 0.9); }
-  .hero-dark .text-black\/80 { color: rgba(255, 255, 255, 0.8); }
-  .hero-dark .text-black\/70 { color: rgba(255, 255, 255, 0.7); }
-  .hero-dark .text-black\/60 { color: rgba(255, 255, 255, 0.6); }
-  .hero-dark .text-black\/55 { color: rgba(255, 255, 255, 0.55); }
-  .hero-dark .text-black\/50 { color: rgba(255, 255, 255, 0.5); }
-  .hero-dark .text-black\/40 { color: rgba(255, 255, 255, 0.4); }
-  .hero-dark .text-black\/30 { color: rgba(255, 255, 255, 0.3); }
-  .hero-dark .text-black\/20 { color: rgba(255, 255, 255, 0.2); }
-  .hero-dark .bg-white { background-color: hsl(0 0% 3.1%); }
-  /* Inverse for subtle dark tints we added for white-page card visibility — flip back inside heroes */
-  .hero-dark .bg-black\/5 { background-color: rgba(255, 255, 255, 0.05); }
-  .hero-dark .bg-black\/10 { background-color: rgba(255, 255, 255, 0.08); }
-  .hero-dark .bg-black\/\[0\.06\] { background-color: rgba(255, 255, 255, 0.06); }
-  .hero-dark .bg-black\/\[0\.08\] { background-color: rgba(255, 255, 255, 0.08); }
-  .hero-dark .border-black\/10 { border-color: rgba(255, 255, 255, 0.1); }
-  .hero-dark .border-black\/15 { border-color: rgba(255, 255, 255, 0.15); }
-  .hero-dark .border-black\/20 { border-color: rgba(255, 255, 255, 0.2); }
-  .hero-dark .border-black\/25 { border-color: rgba(255, 255, 255, 0.25); }
-  /* glass-card inside hero — keep dark glass effect */
-  .hero-dark .glass-card {
-    background: rgba(17, 17, 17, 0.8);
-    box-shadow: none;
-  }
-
   /* Label Style */
   .label-style {
     font-family: 'Space Mono', monospace;
@@ -176,13 +104,12 @@
     letter-spacing: 0.15em;
   }
 
-  /* Glassmorphism Card (light theme) */
+  /* Glassmorphism Card */
   .glass-card {
     @apply relative overflow-hidden rounded-xl;
-    background: #ffffff;
+    background: rgba(17, 17, 17, 0.8);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(123, 47, 190, 0.22);
-    box-shadow: 0 4px 18px rgba(15, 15, 25, 0.06), 0 1px 3px rgba(15, 15, 25, 0.04);
   }
 
   .glass-card::before {
@@ -240,14 +167,14 @@
 
   /* Gradient Backgrounds */
   .gradient-hero {
-    background:
-      radial-gradient(800px at 20% 30%, rgba(123, 47, 190, 0.12), transparent),
-      radial-gradient(600px at 80% 70%, rgba(232, 121, 249, 0.08), transparent),
-      #ffffff;
+    background: 
+      radial-gradient(800px at 20% 30%, rgba(123, 47, 190, 0.25), transparent),
+      radial-gradient(600px at 80% 70%, rgba(232, 121, 249, 0.12), transparent),
+      #080808;
   }
 
   .gradient-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f7f7f9 50%, #ffffff 100%);
+    background: linear-gradient(180deg, #080808 0%, #0d0d0d 50%, #080808 100%);
   }
 
   /* Hover Effects */
@@ -349,7 +276,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #080808;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(123, 47, 190, 0.4);
@@ -362,7 +289,7 @@
 /* Selection Color */
 ::selection {
   background: rgba(123, 47, 190, 0.3);
-  color: #000;
+  color: #fff;
 }
 
 /* Client Logo Scroll Animation */

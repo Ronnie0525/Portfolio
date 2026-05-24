@@ -104,7 +104,7 @@ const Index = () => {
       {/* HERO */}
       <section
         ref={heroRef}
-        className="hero-dark relative min-h-[92vh] flex items-center overflow-hidden noise-overlay scanline"
+        className="relative min-h-[92vh] flex items-center overflow-hidden noise-overlay scanline"
       >
         {/* Background image */}
         <div
@@ -187,7 +187,7 @@ const Index = () => {
             <a
               href="/Ronnie_Balonon_CV.pdf"
               download="Ronnie_Balonon_CV.pdf"
-              className="cta-style group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E879F9] px-7 py-4 text-black hover:opacity-90 transition-all glow-purple hover:scale-[1.02] min-w-[180px]"
+              className="cta-style group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E879F9] px-7 py-4 text-white hover:opacity-90 transition-all glow-purple hover:scale-[1.02] min-w-[180px]"
             >
               <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               Download CV
@@ -255,7 +255,7 @@ const Index = () => {
                   className="glass-card hover-lift p-7 group flex flex-col h-full"
                 >
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7B2FBE] to-[#E879F9] flex items-center justify-center glow-purple-sm group-hover:scale-110 group-hover:rotate-3 transition-transform">
-                    <s.icon className="w-6 h-6 text-black" />
+                    <s.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="mt-5 text-xl font-semibold leading-tight">{s.title}</h3>
                   <p className="mt-3 text-muted-foreground text-base flex-1">{s.body}</p>
@@ -437,7 +437,7 @@ const Index = () => {
                 >
                   <div className="flex items-center gap-4 min-w-0">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7B2FBE] to-[#E879F9] flex items-center justify-center flex-shrink-0 group-hover:rotate-3 transition-transform">
-                      <Mail className="w-5 h-5 text-black" />
+                      <Mail className="w-5 h-5 text-white" />
                     </div>
                     <div className="min-w-0">
                       <div className="label-style text-muted-foreground">Email</div>
@@ -457,7 +457,7 @@ const Index = () => {
                 >
                   <div className="flex items-center gap-4 min-w-0">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7B2FBE] to-[#E879F9] flex items-center justify-center flex-shrink-0 group-hover:rotate-3 transition-transform">
-                      <MessageCircle className="w-5 h-5 text-black" />
+                      <MessageCircle className="w-5 h-5 text-white" />
                     </div>
                     <div className="min-w-0">
                       <div className="label-style text-muted-foreground">

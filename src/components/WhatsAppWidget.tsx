@@ -95,7 +95,7 @@ const WhatsAppWidget = () => {
                   >
                     <div className="flex items-center gap-3 relative z-10">
                       <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${option.gradient} flex items-center justify-center shadow-lg group-hover:shadow-green-500/20 transition-shadow`}>
-                        <option.icon className="w-4 h-4 text-black" />
+                        <option.icon className="w-4 h-4 text-white" />
                       </div>
                       <div className="text-left flex-1">
                         <p className="font-heading font-semibold text-sm text-foreground group-hover:text-green-400 transition-colors">{option.label}</p>
@@ -124,7 +124,7 @@ const WhatsAppWidget = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="relative w-14 h-14 rounded-full bg-green-500 text-black shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] flex items-center justify-center transition-shadow"
+        className="relative w-14 h-14 rounded-full bg-green-500 text-white shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] flex items-center justify-center transition-shadow"
       >
         {/* Glow ring */}
         <span className="absolute inset-0 rounded-full bg-green-500/20 animate-ping" style={{ animationDuration: "2s" }} />

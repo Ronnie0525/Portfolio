@@ -157,7 +157,7 @@ const CarouselSection = ({ title, subtitle, slides }: { title: string; subtitle:
         <button
           onClick={() => emblaApi?.scrollPrev()}
           disabled={!canScrollPrev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-black/15 flex items-center justify-center text-foreground hover:bg-primary/20 transition-colors disabled:opacity-30"
+          className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-white/10 flex items-center justify-center text-foreground hover:bg-primary/20 transition-colors disabled:opacity-30"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -165,7 +165,7 @@ const CarouselSection = ({ title, subtitle, slides }: { title: string; subtitle:
         <button
           onClick={() => emblaApi?.scrollNext()}
           disabled={!canScrollNext}
-          className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-black/15 flex items-center justify-center text-foreground hover:bg-primary/20 transition-colors disabled:opacity-30"
+          className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-white/10 flex items-center justify-center text-foreground hover:bg-primary/20 transition-colors disabled:opacity-30"
           aria-label="Next slide"
         >
           <ChevronRight className="w-5 h-5" />

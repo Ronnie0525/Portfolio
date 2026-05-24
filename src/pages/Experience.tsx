@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, Globe, Rocket, Eye, TrendingUp, Award, Users, Briefcase, Share2, Camera, Film, Sparkles, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,14 +19,14 @@ const metrics = [
   { value: "1", label: "Year Experience", icon: Award },
   { value: "20+", label: "Projects Delivered", icon: Briefcase },
   { value: "AI", label: "Powered Workflow", icon: Users },
-  { value: "PHâ†’AE", label: "Philippines & Dubai", icon: TrendingUp }
+  { value: "PH→AE", label: "Philippines & Dubai", icon: TrendingUp }
 ];
 
 const capabilities = [
   {
     icon: Palette,
     title: "Graphic Design & Brand",
-    description: "Logos, brand systems, and print-ready collateral â€” clean, consistent, and ready to deploy."
+    description: "Logos, brand systems, and print-ready collateral — clean, consistent, and ready to deploy."
   },
   {
     icon: Eye,
@@ -46,12 +46,12 @@ const capabilities = [
   {
     icon: Film,
     title: "Video Editing",
-    description: "Reels, ads, and short brand stories â€” color-graded, sound-designed, and cut for impact."
+    description: "Reels, ads, and short brand stories — color-graded, sound-designed, and cut for impact."
   },
   {
     icon: Sparkles,
     title: "AI-Powered Workflow",
-    description: "AI tools layered into every stage â€” from ideation to delivery â€” for faster, sharper output."
+    description: "AI tools layered into every stage — from ideation to delivery — for faster, sharper output."
   }
 ];
 
@@ -59,12 +59,12 @@ const journey = [
   {
     location: "Philippines",
     title: "Where it started",
-    description: "Began my design journey working with local startups and small businesses â€” learning the fundamentals of brand, typography, and clean visual systems."
+    description: "Began my design journey working with local startups and small businesses — learning the fundamentals of brand, typography, and clean visual systems."
   },
   {
     location: "Dubai, UAE",
     title: "Where I am now",
-    description: "Continuing as a freelance graphic designer in Dubai â€” working on social media, UI/UX, photography, and video edits for UAE brands, with AI tools layered into every step of my workflow."
+    description: "Continuing as a freelance graphic designer in Dubai — working on social media, UI/UX, photography, and video edits for UAE brands, with AI tools layered into every step of my workflow."
   }
 ];
 
@@ -106,14 +106,14 @@ const Experience = () => {
   return (
     <Layout>
       <SEOHead
-        title="Experience â€” Ronnie Balonon Jr. | Graphic Designer Dubai"
-        description="Ronnie Balonon Jr. â€” 1 year of combined design experience across the Philippines and Dubai. Branding, UI/UX, social, photography, and video editing â€” powered by AI."
+        title="Experience — Ronnie Balonon Jr. | Graphic Designer Dubai"
+        description="Ronnie Balonon Jr. — 1 year of combined design experience across the Philippines and Dubai. Branding, UI/UX, social, photography, and video editing — powered by AI."
         keywords="freelance designer Dubai, Philippines graphic designer, AI designer UAE, Ronnie Balonon"
         canonicalUrl="/experience"
       />
 
       {/* Hero Section */}
-      <section className="hero-dark relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-20" />
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]" />
 
@@ -132,7 +132,7 @@ const Experience = () => {
               <span className="text-gradient">Real Client Work.</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10">
-              I'm Ronnie Balonon â€” a freelance graphic designer with 1 year of combined experience between the Philippines and Dubai, focused on social media, UI/UX, photography, and video editing, all powered by AI.
+              I'm Ronnie Balonon — a freelance graphic designer with 1 year of combined experience between the Philippines and Dubai, focused on social media, UI/UX, photography, and video editing, all powered by AI.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="lg" className="rounded-[5px]" asChild>
@@ -185,7 +185,7 @@ const Experience = () => {
               Building Brands That <span className="text-gradient">Command Attention</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I believe every brand deserves to be unforgettable. I pair clean design fundamentals with AI-powered tools to create social posts, websites, photography, and video edits that don't just look good â€” they actually move the needle. One year in, every project still gets the same hands-on care.
+              I believe every brand deserves to be unforgettable. I pair clean design fundamentals with AI-powered tools to create social posts, websites, photography, and video edits that don't just look good — they actually move the needle. One year in, every project still gets the same hands-on care.
             </p>
           </motion.div>
         </div>
@@ -290,9 +290,9 @@ const Experience = () => {
             className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
           >
             {[
-              { icon: Rocket, title: "Speed & Precision", desc: "Fast turnaround without sacrificing quality â€” AI-assisted production keeps timelines tight and output sharp." },
-              { icon: Eye, title: "Hands-On & Direct", desc: "No middlemen, no handoffs. You talk directly to me, the person designing your work â€” clearer briefs, faster iterations." },
-              { icon: Zap, title: "AI-First Approach", desc: "AI is layered into every part of my workflow â€” ideation, generation, refinement â€” so the work ships faster and looks current." }
+              { icon: Rocket, title: "Speed & Precision", desc: "Fast turnaround without sacrificing quality — AI-assisted production keeps timelines tight and output sharp." },
+              { icon: Eye, title: "Hands-On & Direct", desc: "No middlemen, no handoffs. You talk directly to me, the person designing your work — clearer briefs, faster iterations." },
+              { icon: Zap, title: "AI-First Approach", desc: "AI is layered into every part of my workflow — ideation, generation, refinement — so the work ships faster and looks current." }
             ].map((item) => (
               <motion.div key={item.title} variants={fadeInUp}>
                 <SaberBorderCard>
@@ -326,7 +326,7 @@ const Experience = () => {
                   Ready to Build Something <span className="text-gradient">Together</span>?
                 </h2>
                 <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                  Let's make your brand stand out â€” sharper visuals, faster turnaround, AI-powered workflow. One designer, fully focused on your project.
+                  Let's make your brand stand out — sharper visuals, faster turnaround, AI-powered workflow. One designer, fully focused on your project.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button variant="hero" size="lg" className="rounded-[5px]" asChild>
