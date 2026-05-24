@@ -548,7 +548,7 @@ const PortfolioSection = () => {
               </div>
             </motion.div>
           ) : (
-            <motion.div key={activeTab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <motion.div key={activeTab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="grid grid-cols-2 md:grid-cols-3 gap-5">
               {currentProjects.map(project => <motion.div key={project.id} className="group relative" whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
                 <a href={project.links[0]?.url} {...(project.links[0]?.url.includes('.pdf') || project.links[0]?.url.includes('drive.google.com') ? {} : { target: "_blank", rel: "noopener noreferrer" })} className="block">
                   <div className="relative overflow-hidden rounded-xl bg-background/50 border border-border/50 hover:border-primary/40 transition-all duration-300">
