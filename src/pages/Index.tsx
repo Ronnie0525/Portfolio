@@ -185,7 +185,7 @@ const Index = () => {
             className="mt-10 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4"
           >
             <a
-              href="/Ronnie_Balonon_CV.pdf"
+              href={`${import.meta.env.BASE_URL}Ronnie_Balonon_CV.pdf`}
               download="Ronnie_Balonon_CV.pdf"
               className="cta-style group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E879F9] px-7 py-4 text-white hover:opacity-90 transition-all glow-purple hover:scale-[1.02] min-w-[180px]"
             >

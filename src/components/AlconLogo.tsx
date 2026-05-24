@@ -8,7 +8,7 @@ const AlconLogo = ({ className = "", showWordmark = true }: AlconLogoProps) => {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img
-        src="/logo.png"
+        src={`${import.meta.env.BASE_URL}logo.png`}
         alt="Ronnie Balonon Jr. logo"
         className="shrink-0 object-contain"
         width={40}

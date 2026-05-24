@@ -78,7 +78,7 @@ const PromoPopup = () => {
                     asChild
                     onClick={handleClose}
                   >
-                    <a href="/Ronnie_Balonon_CV.pdf" download className="flex items-center justify-center gap-2">
+                    <a href={`${import.meta.env.BASE_URL}Ronnie_Balonon_CV.pdf`} download className="flex items-center justify-center gap-2">
                       <Download className="w-4 h-4" />
                       Download CV
                     </a>
