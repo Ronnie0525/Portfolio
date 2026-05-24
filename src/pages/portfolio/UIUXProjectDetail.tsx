@@ -111,10 +111,10 @@ const UIUXProjectDetail = () => {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-end overflow-hidden" style={{ background: `linear-gradient(135deg, ${project.accentFrom}20, #07070A 60%)` }}>
+      <section className="relative min-h-[50vh] flex items-end overflow-hidden" style={{ background: `linear-gradient(135deg, ${project.accentFrom}20, #ffffff 60%)` }}>
         <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 pb-16 pt-32">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
-            <Link to="/portfolio?category=uiux" className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors mb-8">
+            <Link to="/portfolio?category=uiux" className="inline-flex items-center gap-2 text-sm text-black/60 hover:text-black transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" /> Back to Portfolio
             </Link>
           </motion.div>
@@ -125,11 +125,11 @@ const UIUXProjectDetail = () => {
               </div>
               <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] border border-white/20" style={{ background: project.badgeColor, color: project.badgeTextColor }}>{project.badge}</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white" style={{ fontFamily: "Space Grotesk" }}>{project.name}</h1>
-            <p className="text-xl text-white/70">{project.tagline}</p>
+            <h1 className="text-5xl md:text-7xl font-bold text-black" style={{ fontFamily: "Space Grotesk" }}>{project.name}</h1>
+            <p className="text-xl text-black/70">{project.tagline}</p>
             <div className="flex flex-wrap gap-3 pt-2">
               {[{ icon: User, text: "Role: UI/UX Designer" },{ icon: Calendar, text: `Duration: ${project.duration}` },{ icon: Wrench, text: `Tools: ${project.tools}` },{ icon: Clock, text: `Year: ${project.year}` }].map(m => (
-                <div key={m.text} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm text-white/80">
+                <div key={m.text} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm text-black/80">
                   <m.icon className="w-3.5 h-3.5" style={{ color: project.accentFrom }} /><span className="text-xs">{m.text}</span>
                 </div>
               ))}
@@ -214,9 +214,9 @@ const UIUXProjectDetail = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-xs text-[#6B6B76] uppercase tracking-widest mb-1">Next Project</p>
-                  <h3 className="text-lg font-bold text-white">{nextProject.name}</h3>
+                  <h3 className="text-lg font-bold text-black">{nextProject.name}</h3>
                 </div>
-                <ArrowRight className="w-5 h-5 text-[#6B6B76] group-hover:text-white transition-colors group-hover:translate-x-1" />
+                <ArrowRight className="w-5 h-5 text-[#6B6B76] group-hover:text-black transition-colors group-hover:translate-x-1" />
               </div>
             </div>
           </motion.div>

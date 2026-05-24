@@ -149,7 +149,7 @@ const ClientProjects = () => {
                         className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.gradient} flex items-center justify-center shadow-lg`}
                         style={{ boxShadow: `0 0 30px ${project.glowColor}` }}
                       >
-                        <project.icon className="w-6 h-6 text-white" />
+                        <project.icon className="w-6 h-6 text-black" />
                       </div>
                       <div>
                         <h2 className="font-heading text-2xl md:text-3xl font-bold">{project.name}</h2>
@@ -193,7 +193,7 @@ const ClientProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-heading font-bold uppercase tracking-wider text-sm
-                        bg-gradient-to-r ${project.gradient} text-white
+                        bg-gradient-to-r ${project.gradient} text-black
                         shadow-lg hover:shadow-xl hover:scale-[1.03] transition-all duration-300`}
                       style={{ boxShadow: `0 0 25px ${project.glowColor}` }}
                       whileHover={{ scale: 1.03 }}

@@ -18,7 +18,7 @@ const DesignSystemPreview = ({ colors, fonts, accentColor }: DesignSystemPreview
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       className="rounded-2xl border border-white/[0.06] backdrop-blur-xl p-8 space-y-8"
-      style={{ background: `linear-gradient(160deg, ${accentColor}04, rgba(10,10,15,0.95))` }}
+      style={{ background: `linear-gradient(160deg, ${accentColor}04, rgba(255,255,255,0.95))` }}
     >
       {/* Color Palette */}
       <div>
@@ -28,7 +28,7 @@ const DesignSystemPreview = ({ colors, fonts, accentColor }: DesignSystemPreview
             <div key={c.hex} className="text-center space-y-2">
               <div className="w-14 h-14 rounded-xl border border-white/[0.06]" style={{ background: c.hex }} />
               <div className="text-[10px] text-[#B0B0B8]">{c.name}</div>
-              <div className="text-[9px] text-white/30 font-mono">{c.hex}</div>
+              <div className="text-[9px] text-black/30 font-mono">{c.hex}</div>
             </div>
           ))}
         </div>
@@ -40,7 +40,7 @@ const DesignSystemPreview = ({ colors, fonts, accentColor }: DesignSystemPreview
         <div className="space-y-3">
           {fonts.map(f => (
             <div key={f} className="flex items-baseline gap-4">
-              <span className="text-[10px] uppercase tracking-widest text-white/30 w-20">{f}</span>
+              <span className="text-[10px] uppercase tracking-widest text-black/30 w-20">{f}</span>
               <span className="text-lg font-bold" style={{ fontFamily: f }}>The quick brown fox</span>
             </div>
           ))}
@@ -52,8 +52,8 @@ const DesignSystemPreview = ({ colors, fonts, accentColor }: DesignSystemPreview
         <div className="text-sm font-bold mb-4 text-[#B0B0B8]">Button Styles</div>
         <div className="flex flex-wrap gap-3">
           <div className="px-5 py-2.5 rounded-xl text-xs font-bold text-black" style={{ background: accentColor }}>Primary</div>
-          <div className="px-5 py-2.5 rounded-xl text-xs font-bold border border-white/10 text-white/70">Secondary</div>
-          <div className="px-5 py-2.5 rounded-xl text-xs font-bold text-white/50 hover:text-white/70">Ghost</div>
+          <div className="px-5 py-2.5 rounded-xl text-xs font-bold border border-white/10 text-black/70">Secondary</div>
+          <div className="px-5 py-2.5 rounded-xl text-xs font-bold text-black/50 hover:text-black/70">Ghost</div>
         </div>
       </div>
     </motion.div>

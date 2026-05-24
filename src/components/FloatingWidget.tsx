@@ -136,7 +136,7 @@ const FloatingWidget = () => {
             className="absolute bottom-20 right-0 w-[350px] sm:w-[380px] bg-card border border-border rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-primary to-orange-600 p-4 text-white">
+            <div className="bg-gradient-to-r from-primary to-orange-600 p-4 text-black">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
@@ -144,7 +144,7 @@ const FloatingWidget = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold">Ronnie's Assistant</h3>
-                    <p className="text-xs text-white/80">Typically replies instantly</p>
+                    <p className="text-xs text-black/80">Typically replies instantly</p>
                   </div>
                 </div>
                 <button
@@ -294,7 +294,7 @@ const FloatingWidget = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-orange-600 text-white shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow"
+        className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-orange-600 text-black shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (

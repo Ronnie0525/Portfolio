@@ -2,7 +2,7 @@ import { Flower2, Heart, ShoppingBag, Home, Search, User } from "lucide-react";
 
 const PetalStemMockup = () => (
   <div className="absolute inset-0 flex flex-col" style={{ background: "#FFF5F5" }}>
-    <div className="flex items-center justify-between px-3 pt-1.5 pb-1"><span className="text-[7px] font-medium text-black/50">9:41</span><div className="flex gap-1"><div className="w-2.5 h-1.5 rounded-sm bg-black/20" /><div className="w-3 h-1.5 rounded-sm bg-black/40" /></div></div>
+    <div className="flex items-center justify-between px-3 pt-1.5 pb-1"><span className="text-[7px] font-medium text-black/50">9:41</span><div className="flex gap-1"><div className="w-2.5 h-1.5 rounded-sm bg-white/20" /><div className="w-3 h-1.5 rounded-sm bg-white/40" /></div></div>
     <div className="flex items-center justify-between px-3 py-1">
       <div className="flex items-center gap-1"><Flower2 className="w-3 h-3 text-rose-500" /><span className="text-[9px] font-semibold text-rose-900 italic">Petal & Stem</span></div>
       <div className="flex items-center gap-2"><Heart className="w-3 h-3 text-rose-300" /><ShoppingBag className="w-3 h-3 text-rose-300" /></div>

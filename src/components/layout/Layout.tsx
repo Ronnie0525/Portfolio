@@ -12,7 +12,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen" style={{ background: "#080808", color: "#fff" }}>
+    <div className="min-h-screen" style={{ background: "#ffffff", color: "#fff" }}>
       <CustomCursor />
       <ScrollReveal />
       <Navbar />

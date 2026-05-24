@@ -15,7 +15,39 @@
     --purple-accent: 300 90% 72%;
   }
 
-  .dark, :root {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    --primary: 270 63% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 4%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 35%;
+    --accent: 300 90% 72%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 270 63% 47% / 0.22;
+    --input: 0 0% 90%;
+    --ring: 270 63% 47%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 270 63% 47%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 4%;
+    --sidebar-primary: 270 63% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 4%;
+    --sidebar-border: 270 63% 47% / 0.22;
+    --sidebar-ring: 270 63% 47%;
+  }
+
+  .dark {
     --background: 0 0% 3.1%;
     --foreground: 0 0% 100%;
     --card: 0 0% 6.7%;
@@ -107,7 +139,7 @@
   /* Glassmorphism Card */
   .glass-card {
     @apply relative overflow-hidden rounded-xl;
-    background: rgba(17, 17, 17, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(123, 47, 190, 0.22);
   }
@@ -167,14 +199,14 @@
 
   /* Gradient Backgrounds */
   .gradient-hero {
-    background: 
-      radial-gradient(800px at 20% 30%, rgba(123, 47, 190, 0.25), transparent),
-      radial-gradient(600px at 80% 70%, rgba(232, 121, 249, 0.12), transparent),
-      #080808;
+    background:
+      radial-gradient(800px at 20% 30%, rgba(123, 47, 190, 0.12), transparent),
+      radial-gradient(600px at 80% 70%, rgba(232, 121, 249, 0.08), transparent),
+      #ffffff;
   }
 
   .gradient-section {
-    background: linear-gradient(180deg, #080808 0%, #0d0d0d 50%, #080808 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f9 50%, #ffffff 100%);
   }
 
   /* Hover Effects */
@@ -276,7 +308,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #080808;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(123, 47, 190, 0.4);
@@ -289,7 +321,7 @@
 /* Selection Color */
 ::selection {
   background: rgba(123, 47, 190, 0.3);
-  color: #fff;
+  color: #000;
 }
 
 /* Client Logo Scroll Animation */
